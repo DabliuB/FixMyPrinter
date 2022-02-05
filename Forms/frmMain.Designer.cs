@@ -129,12 +129,11 @@
             this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
             this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFixPrinter.Location = new System.Drawing.Point(78, 70);
+            this.btnFixPrinter.Location = new System.Drawing.Point(52, 70);
             this.btnFixPrinter.Name = "btnFixPrinter";
-            this.btnFixPrinter.Size = new System.Drawing.Size(255, 62);
+            this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
             this.btnFixPrinter.TabIndex = 0;
             this.btnFixPrinter.Text = "Tentar corrigir minha impressora";
-            this.btnFixPrinter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFixPrinter.UseVisualStyleBackColor = true;
             this.btnFixPrinter.Click += new System.EventHandler(this.btnFixPrinter_Click);
             // 
@@ -308,6 +307,7 @@
             // 
             // lblStatus
             // 
+            this.lblStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(42, 17);
             this.lblStatus.Text = "Status.";
