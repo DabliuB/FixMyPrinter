@@ -32,8 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tpFixPrinter = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblHelp = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnFixPrinter = new System.Windows.Forms.Button();
             this.tpDownloadDrivers = new System.Windows.Forms.TabPage();
@@ -56,12 +55,14 @@
             this.tmrServiceMonitor = new System.Windows.Forms.Timer(this.components);
             this.lblAboutVersion = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
+            this.gpbFixPrinter = new System.Windows.Forms.GroupBox();
             this.tabMain.SuspendLayout();
             this.tpFixPrinter.SuspendLayout();
             this.tpDownloadDrivers.SuspendLayout();
             this.tpAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAboutLinkedinProfile)).BeginInit();
             this.stsStatus.SuspendLayout();
+            this.gpbFixPrinter.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -78,10 +79,9 @@
             // 
             // tpFixPrinter
             // 
-            this.tpFixPrinter.Controls.Add(this.label3);
-            this.tpFixPrinter.Controls.Add(this.label2);
+            this.tpFixPrinter.Controls.Add(this.gpbFixPrinter);
+            this.tpFixPrinter.Controls.Add(this.lblHelp);
             this.tpFixPrinter.Controls.Add(this.btnHelp);
-            this.tpFixPrinter.Controls.Add(this.btnFixPrinter);
             this.tpFixPrinter.Location = new System.Drawing.Point(4, 26);
             this.tpFixPrinter.Name = "tpFixPrinter";
             this.tpFixPrinter.Padding = new System.Windows.Forms.Padding(3);
@@ -90,26 +90,15 @@
             this.tpFixPrinter.Text = "Corrigir impressora";
             this.tpFixPrinter.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // lblHelp
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(81, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 34);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Se o procedimento acima não funcionou \r\n            clique no botão abaixo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(49, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 34);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Para tentar resolver problemas na fila de impressão\r\n                      clique" +
-    " no botão abaixo";
+            this.lblHelp.AutoSize = true;
+            this.lblHelp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblHelp.Location = new System.Drawing.Point(81, 189);
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Size = new System.Drawing.Size(249, 34);
+            this.lblHelp.TabIndex = 3;
+            this.lblHelp.Text = "Se o procedimento acima não funcionou \r\n            clique no botão abaixo";
             // 
             // btnHelp
             // 
@@ -129,7 +118,7 @@
             this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
             this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFixPrinter.Location = new System.Drawing.Point(52, 70);
+            this.btnFixPrinter.Location = new System.Drawing.Point(44, 32);
             this.btnFixPrinter.Name = "btnFixPrinter";
             this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
             this.btnFixPrinter.TabIndex = 0;
@@ -336,6 +325,16 @@
             this.lblVersion.TabIndex = 7;
             this.lblVersion.Text = "versão";
             // 
+            // gpbFixPrinter
+            // 
+            this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
+            this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
+            this.gpbFixPrinter.Name = "gpbFixPrinter";
+            this.gpbFixPrinter.Size = new System.Drawing.Size(398, 126);
+            this.gpbFixPrinter.TabIndex = 4;
+            this.gpbFixPrinter.TabStop = false;
+            this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -363,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAboutLinkedinProfile)).EndInit();
             this.stsStatus.ResumeLayout(false);
             this.stsStatus.PerformLayout();
+            this.gpbFixPrinter.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,8 +372,7 @@
 
         private System.Windows.Forms.TabControl tabMain;
         private System.Windows.Forms.TabPage tpFixPrinter;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblHelp;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnFixPrinter;
         private System.Windows.Forms.TabPage tpDownloadDrivers;
@@ -396,6 +395,7 @@
         private System.Windows.Forms.Timer tmrServiceMonitor;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label lblAboutVersion;
+        private System.Windows.Forms.GroupBox gpbFixPrinter;
     }
 }
 
