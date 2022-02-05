@@ -17,46 +17,26 @@ namespace FixMyPrinter
             lblVersion.Text = Application.ProductVersion;
         }
 
-        //Definindo o Spooler como o serviço alvo dos procedimentos
+        //Variáveis globais da classe.
+        //Definindo o Spooler como o serviço alvo dos procedimentos.
         ServiceController spooler = new ServiceController("Spooler");
+        //Flag utilizada na verificação do status do serviço.
+        bool IsServiceDisabled = false;
 
+        //Configurando o timer que verifica o status do serviço.
         private void StartTimerServiceMonitor()
         {
-            tmrServiceMonitor.Interval = 500;
+            tmrServiceMonitor.Interval = 300; //milissegundos
             tmrServiceMonitor.Tick += new EventHandler(tmrServiceMonitor_Tick);
 
             tmrServiceMonitor.Enabled = true;
         }
-
+        //Definindo a tarefa que o timer deve executar.
         private void tmrServiceMonitor_Tick(object sender, EventArgs e)
         {
             ServiceMonitor();
         }
-
-        private static bool IsAdministrator()
-        {
-            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
-            {
-                WindowsPrincipal principal = new WindowsPrincipal(identity);
-                return principal.IsInRole(WindowsBuiltInRole.Administrator);
-            }
-        }
-
-        private void WindowsRoleVerification()
-        {
-            if (IsAdministrator() == true)
-            {
-                this.Text = "FixMyPrinter | Administrador";
-            }
-            else
-            {
-                MessageBox.Show("A manipulação de serviços do sistema exige que o programa seja executado " +
-                    "por um usuário com privilégios administrativos.\n\n" +
-                    "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                this.Text = "FixMyPrinter";
-            }
-        }
-
+        //Rotina que define o status do serviço, o estado é exibido no radapé do programa.
         private void ServiceMonitor()
         {
             ServiceController spooler = new ServiceController("Spooler");
@@ -70,7 +50,32 @@ namespace FixMyPrinter
                 lblStatus.Text = "parado.";
             }
         }
-
+        //Retorna se o usuário atualmente logado é um Administrador do sistema.
+        private static bool IsAdministrator()
+        {
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+        }
+        //Se o usuário não for Admin exibe um aviso.
+        private void WindowsRoleVerification()
+        {
+            if (IsAdministrator() == false)
+            {
+                MessageBox.Show("A manipulação de serviços do sistema exige que o programa seja executado " +
+                                "por um usuário com privilégios administrativos.\n\n" +
+                                "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Text = "FixMyPrinter";
+                
+            }
+            else
+            {
+                this.Text = "FixMyPrinter | Administrador";
+            }
+        }
+        //Verifica o status do serviço.
         private void VerifyServiceStatus()
         {
             //Verificando se o serviço está parado
@@ -81,10 +86,18 @@ namespace FixMyPrinter
                                 "portanto procure pelos serviços inciados pela letra 'S' até encontrar o 'Spooler de Impressão', quando encontrar dê um duplo clique no serviço,\n\n" +
                                 "Em 'Tipo de inicialização' escolha 'Automático', em 'Status do serviço' pressione o botão 'Iniciar'.\n\n\n" +
                                 "O painel de gerenciamento de serviços irá ser exibido dentro de alguns segundos...", "Aviso");
+                //Abrindo o console de gerenciamento de serviços do Windows.
                 System.Diagnostics.Process.Start("services.msc");
+                IsServiceDisabled = true;
+            }
+            else if (spooler.Status == ServiceControllerStatus.Stopped)
+            {
+                spooler.Start();
             }
         }
 
+
+        //Rotina que recarrega o serviço para limpar a fila de impressão.
         private void ReloadSpooler()
         {
             //Parando o serviço do spooler de impressão
@@ -95,14 +108,18 @@ namespace FixMyPrinter
             spooler.Start();
             MessageBox.Show("Agora tudo deve funcionar corretamente!\n" +
                             "Por favor, tente imprimir novamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            IsServiceDisabled = false;
         }
-
+        //Faz a verificação do status do serviço e se o mesmo não estiver desativado executa a rotina de recarregamento do spooler de impressão.
         private void btnFixPrinter_Click(object sender, EventArgs e)
         {
             try
             {
                 VerifyServiceStatus();
-                ReloadSpooler();
+                if (IsServiceDisabled == false)
+                {
+                    ReloadSpooler();
+                }
             }
             catch (Exception ex)
             {
@@ -111,6 +128,8 @@ namespace FixMyPrinter
             }
         }
 
+
+        //Abre no navegador padrão do usuário uma página que exibe o LinkedIn e o GitHub do desenvolvedor do software.
         private void pbAboutLinkedinProfile_Click(object sender, EventArgs e)
         {
             const string msg = "Deseja acessar o perfil do desenvolvedor no LinkedIn?";
@@ -141,7 +160,7 @@ namespace FixMyPrinter
             frmHelp formHelp = new frmHelp();
             formHelp.ShowDialog();
         }
-
+        //Exibe o formulário que contém os 'avisos legais' e os componentes de terceiros utilizados no projeto.
         private void btnDisclaimer_Click(object sender, EventArgs e)
         {
             frmDisclaimer formDisclaimer = new frmDisclaimer();
