@@ -14,6 +14,7 @@ namespace FixMyPrinter
             InitializeComponent();
             WindowsRoleVerification();
             StartTimerServiceMonitor();
+            lblVersion.Text = Application.ProductVersion;
         }
 
         private void StartTimerServiceMonitor()

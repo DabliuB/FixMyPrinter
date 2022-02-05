@@ -54,6 +54,8 @@
             this.lblServiceState = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmrServiceMonitor = new System.Windows.Forms.Timer(this.components);
+            this.lblAboutVersion = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.tabMain.SuspendLayout();
             this.tpFixPrinter.SuspendLayout();
             this.tpDownloadDrivers.SuspendLayout();
@@ -198,6 +200,8 @@
             // 
             // tpAbout
             // 
+            this.tpAbout.Controls.Add(this.lblVersion);
+            this.tpAbout.Controls.Add(this.lblAboutVersion);
             this.tpAbout.Controls.Add(this.btnDisclaimer);
             this.tpAbout.Controls.Add(this.lblAboutProjectRepoLink);
             this.tpAbout.Controls.Add(this.lblGitHubRepo);
@@ -226,7 +230,7 @@
             // 
             this.lblAboutProjectRepoLink.AutoSize = true;
             this.lblAboutProjectRepoLink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAboutProjectRepoLink.Location = new System.Drawing.Point(68, 236);
+            this.lblAboutProjectRepoLink.Location = new System.Drawing.Point(68, 231);
             this.lblAboutProjectRepoLink.Name = "lblAboutProjectRepoLink";
             this.lblAboutProjectRepoLink.Size = new System.Drawing.Size(275, 17);
             this.lblAboutProjectRepoLink.TabIndex = 4;
@@ -313,6 +317,24 @@
             // 
             this.tmrServiceMonitor.Tick += new System.EventHandler(this.tmrServiceMonitor_Tick);
             // 
+            // lblAboutVersion
+            // 
+            this.lblAboutVersion.AutoSize = true;
+            this.lblAboutVersion.Location = new System.Drawing.Point(16, 287);
+            this.lblAboutVersion.Name = "lblAboutVersion";
+            this.lblAboutVersion.Size = new System.Drawing.Size(51, 17);
+            this.lblAboutVersion.TabIndex = 6;
+            this.lblAboutVersion.Text = "Versão:";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(68, 287);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(47, 17);
+            this.lblVersion.TabIndex = 7;
+            this.lblVersion.Text = "versão";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -369,6 +391,8 @@
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.ToolStripStatusLabel lblServiceState;
         private System.Windows.Forms.Timer tmrServiceMonitor;
+        private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Label lblAboutVersion;
     }
 }
 

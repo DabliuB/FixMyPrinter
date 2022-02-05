@@ -127,6 +127,18 @@ O código fonte deste software está disponível para consulta e modificação n
 do desenvolvedor, sinta-se a vontade para visualizar o que o programa faz e até mesmo adicionar
 ou sugerir melhorias e novas funcionalidades.
 
-Se for fazer um fork, por favor dê os créditos ao projeto original!</value>
+Se for fazer um fork, por favor dê os créditos ao projeto original!
+
+------
+
+Licença: GPL-2.0
+
+-------
+
+Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-Soft
+http://www.aha-soft.com/free-icons/
+
+Este software utiliza a bilblioteca AutoClosingMessageBox, fornecida por Dmitry Garavsky
+https://github.com/DmitryGaravsky/AutoClosingMessageBox</value>
   </data>
 </root>
