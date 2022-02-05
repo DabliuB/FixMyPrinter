@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>Verifique se alguma das luzes do painel da sua impressora está piscando;
+
+Se SIM:
+Verifique a qual função a luz está atrelada, caso seja referente aos cartuchos pode ser que os mesmos estejam com pouca tinta¹, vazios² ou até mesmo queimados³,
+¹ - nesse caso leve seu(s) cartucho(s) para realizar a recarga do(s) mesmo(s), caso não sejam recarregáveis, é preciso substituí-los;
+² - realize a recarga ou a substituição do(s) cartucho(s) de tinta (para impressora jato de tinta) ou do toner (caso sua impressora seja laser);
+³ - nessa situação é recomendado levar a impressora para a manutenção em uma assistência técnica especializada.</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Desligue a sua impressora completamente, apertando o botão LIGA/DESLIGA ou ON/OFF, depois retire o cabo de energia da tomada;
+
+Pressione e segure o botão LIGA/DESLIGA por 10 segundos e solte o botão;
+
+Aguarde 20 segundos;
+
+Conecte a impressora na tomada novamente e ligue-a no botão LIGA/DESLIGA.
+
+Tente imprimir.
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        BwDwAA8A+AAfAP4AfwD/AP8A
+</value>
+  </data>
+</root>
