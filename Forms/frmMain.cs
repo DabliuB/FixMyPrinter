@@ -17,6 +17,9 @@ namespace FixMyPrinter
             lblVersion.Text = Application.ProductVersion;
         }
 
+        //Definindo o Spooler como o serviço alvo dos procedimentos
+        ServiceController spooler = new ServiceController("Spooler");
+
         private void StartTimerServiceMonitor()
         {
             tmrServiceMonitor.Interval = 500;
@@ -49,7 +52,7 @@ namespace FixMyPrinter
             {
                 MessageBox.Show("A manipulação de serviços do sistema exige que o programa seja executado " +
                     "por um usuário com privilégios administrativos.\n\n" +
-                    "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.Text = "FixMyPrinter";
             }
         }
@@ -62,53 +65,43 @@ namespace FixMyPrinter
             {
                 lblStatus.Text = "sendo executado.";
             }
-            else if(spooler.Status == ServiceControllerStatus.Stopped)
+            else if (spooler.Status == ServiceControllerStatus.Stopped)
             {
                 lblStatus.Text = "parado.";
             }
         }
 
+        private void VerifyServiceStatus()
+        {
+            //Verificando se o serviço está parado
+            if (spooler.StartType == ServiceStartMode.Disabled)
+            {
+                MessageBox.Show("O serviço está desativado, será necessário inicializá-lo manualmente!\n\n" +
+                                "Os serviços do Windows geralmente são exibidos em ordem alfabética,\n\n" +
+                                "portanto procure pelos serviços inciados pela letra 'S' até encontrar o 'Spooler de Impressão', quando encontrar dê um duplo clique no serviço,\n\n" +
+                                "Em 'Tipo de inicialização' escolha 'Automático', em 'Status do serviço' pressione o botão 'Iniciar'.\n\n\n" +
+                                "O painel de gerenciamento de serviços irá ser exibido dentro de alguns segundos...", "Aviso");
+                System.Diagnostics.Process.Start("services.msc");
+            }
+        }
+
         private void ReloadSpooler()
         {
-            //Definindo o Spooler como o serviço alvo dos procedimentos
-            ServiceController spooler = new ServiceController("Spooler");
-
-            //Verificando se o serviço está parado
-            if (spooler.Status == ServiceControllerStatus.Stopped || spooler.Status == ServiceControllerStatus.Paused)
-            {
-                    if (spooler.StartType == ServiceStartMode.Automatic || spooler.StartType == ServiceStartMode.Manual)
-                    {
-
-                    AutoClosingMessageBox.Show("Iniciando o serviço do Spooler de impressão...", "Status", 1000);
-
-                    spooler.Start();
-                    }
-
-                    else if (spooler.StartType == ServiceStartMode.Disabled)
-                {
-                    MessageBox.Show("O serviço está desativado, será necessário inicializá-lo manualmente!");
-                    System.Diagnostics.Process.Start("services.msc");
-                }
-
-            }
-
-            //Se o serviço estiver sendo executado ele será parado e iniciado novamente.
-            else if (spooler.Status == ServiceControllerStatus.Running)
-            {
-                //Parando o serviço do spooler de impressão
-                spooler.Stop();
-
-                //Iniciando o serviço do Spooler de impressão
-                spooler.Start();
-                MessageBox.Show("Agora tudo deve funcionar corretamente!\n" +
-                                "Por favor, tente imprimir novamente.", "Aviso");
-            }
+            //Parando o serviço do spooler de impressão
+            AutoClosingMessageBox.Show("Parando o serviço do Spooler de impressão...", "Status", 1300);
+            spooler.Stop();
+            //Iniciando o serviço do Spooler de impressão
+            AutoClosingMessageBox.Show("Reiniciando o serviço do Spooler de impressão...", "Status", 1300);
+            spooler.Start();
+            MessageBox.Show("Agora tudo deve funcionar corretamente!\n" +
+                            "Por favor, tente imprimir novamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnFixPrinter_Click(object sender, EventArgs e)
         {
             try
             {
+                VerifyServiceStatus();
                 ReloadSpooler();
             }
             catch (Exception ex)
