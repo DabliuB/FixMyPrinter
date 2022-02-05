@@ -200,8 +200,6 @@
             // 
             // tpAbout
             // 
-            this.tpAbout.Controls.Add(this.lblVersion);
-            this.tpAbout.Controls.Add(this.lblAboutVersion);
             this.tpAbout.Controls.Add(this.btnDisclaimer);
             this.tpAbout.Controls.Add(this.lblAboutProjectRepoLink);
             this.tpAbout.Controls.Add(this.lblGitHubRepo);
@@ -303,8 +301,9 @@
             // 
             // lblServiceState
             // 
+            this.lblServiceState.Image = global::FixMyPrinter.Properties.Resources.Info;
             this.lblServiceState.Name = "lblServiceState";
-            this.lblServiceState.Size = new System.Drawing.Size(83, 17);
+            this.lblServiceState.Size = new System.Drawing.Size(99, 17);
             this.lblServiceState.Text = "O serviço está:";
             // 
             // lblStatus
@@ -320,7 +319,8 @@
             // lblAboutVersion
             // 
             this.lblAboutVersion.AutoSize = true;
-            this.lblAboutVersion.Location = new System.Drawing.Point(16, 287);
+            this.lblAboutVersion.Enabled = false;
+            this.lblAboutVersion.Location = new System.Drawing.Point(319, 405);
             this.lblAboutVersion.Name = "lblAboutVersion";
             this.lblAboutVersion.Size = new System.Drawing.Size(51, 17);
             this.lblAboutVersion.TabIndex = 6;
@@ -329,7 +329,8 @@
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Location = new System.Drawing.Point(68, 287);
+            this.lblVersion.Enabled = false;
+            this.lblVersion.Location = new System.Drawing.Point(368, 405);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(47, 17);
             this.lblVersion.TabIndex = 7;
@@ -340,7 +341,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 425);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnMainClose);
+            this.Controls.Add(this.lblAboutVersion);
             this.Controls.Add(this.stsStatus);
             this.Controls.Add(this.tabMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
