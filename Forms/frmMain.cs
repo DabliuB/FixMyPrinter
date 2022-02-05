@@ -47,7 +47,7 @@ namespace FixMyPrinter
             }
             else
             {
-                MessageBox.Show("A manipualação de serviços do sistema exige que o programa seja executado " +
+                MessageBox.Show("A manipulação de serviços do sistema exige que o programa seja executado " +
                     "por um usuário com privilégios administrativos.\n\n" +
                     "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.Text = "FixMyPrinter";
@@ -113,8 +113,8 @@ namespace FixMyPrinter
             }
             catch (Exception ex)
             {
-                const string errmsg = "Ocorreu um erro inesperado";
-                MessageBox.Show(ex.Message, errmsg);
+                const string errmsg = "Ocorreu um erro!";
+                MessageBox.Show(ex.Message, errmsg, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
