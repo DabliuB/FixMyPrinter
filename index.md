@@ -36,7 +36,7 @@ Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-
 >http://www.aha-soft.com/free-icons/
 
 Este software utiliza a biblioteca AutoClosingMessageBox, fornecida por Dmitry Garavsky
->https://github.com/DmitryGaravsky/AutoClosingMessageBo
+>https://github.com/DmitryGaravsky/AutoClosingMessageBox
 
 ⚠️ Este projeto não tem nenhuma relação com qualquer outro software, site, rede social e afins que utilizem este mesmo nome _"FixMyPrinter"_.
 
