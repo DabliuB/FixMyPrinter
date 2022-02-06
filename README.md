@@ -20,3 +20,5 @@ de impressão que se traduzem em economia de tempo de serviço em acessos remoto
 https://github.com/pontiffex/FixMyPrinter/releases
 ![Camada 3](https://user-images.githubusercontent.com/14021232/152700917-be4aacea-2e96-45e0-903d-982a8fbcf1f9.png)
 FixMyPrinter v1
+
+:warning: Este projeto não tem nenhuma relação com qualquer outro software, site, rede social e afins que possuam este mesmo nome  _"FixMyPrinter"_.
