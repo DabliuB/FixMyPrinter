@@ -2,35 +2,11 @@
 
 O FixMyPrinter é um software simples que tem o objetivo de auxiliar usuários do sistemas operacional Windows à resolver problemas básicos realcionados à fila de impressão.
 
-O aplicativo manipula o serviço do Spooler de impressão do Windows e faz uma limpeza nos arquivos localizados na pasta spool, na raiz do sistema.
+O objetivo deste software é tentar resolver simples problemas enfrentados por usuários comuns ao tentar imprimir. Muitas vezes ocorrem erros durante o processo e a fila de impressão do Windows acaba ficando cheia e o usuário, por sua vez não consegue imprimir, já que os documentos "emperrados" na fila não deixam a impressão acontecer normalmente.
 
+Esta solução visa permitir ao usuário reiniciar o serviço do * Spooler de impressão * do Windows e limpar esta fila. Além de deixar alguns atalhos para o download de drivers para a instalação de sua impressora.
 
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Considerções gerais
+### Considerações gerais
 Todos os ícones e nomes de marcas utilizados e/ou mencionados neste programa de computador são de propriedade e/ou são marcas registradas de seus respectivos donos, e são utilizados unicamente com a finalidade de simplificar e melhorar a utilização do software de forma visual, visto que seu público alvo são usuários leigos.
 
 Este programa não realiza nenhuma modificação direta na sua impressora, ele apenas manipula o sistema operacional (Windows) buscando liberar a fila de impressão.
@@ -54,7 +30,7 @@ disponível; e as modificações devem estar documentadas.
 [retirado daqui](http://www.participa.br/articles/public/0008/6555/Resumo_Licencas.pdf)
 
 
-## Softwares e assets de terceiros utilizados:
+### Softwares e assets de terceiros utilizados:
 
 Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-Soft
 >http://www.aha-soft.com/free-icons/
