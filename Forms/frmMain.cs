@@ -130,7 +130,7 @@ namespace FixMyPrinter
             else
             {
                 lblSpoolerFilesCleaned.Visible = true;
-                lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.LightGray;
+                lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.DarkGray;
                 lblSpoolerFilesCleaned.Text = "Nenhum arquivo no spooler para limpar.";
             }
         }
