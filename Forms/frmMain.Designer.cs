@@ -69,6 +69,9 @@
             // 
             // tabMain
             // 
+            this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabMain.Controls.Add(this.tpFixPrinter);
             this.tabMain.Controls.Add(this.tpDownloadDrivers);
             this.tabMain.Controls.Add(this.tpAbout);
@@ -77,7 +80,7 @@
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 0;
             this.tabMain.Size = new System.Drawing.Size(418, 345);
-            this.tabMain.TabIndex = 1;
+            this.tabMain.TabIndex = 0;
             // 
             // tpFixPrinter
             // 
@@ -99,7 +102,7 @@
             this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
             this.gpbFixPrinter.Name = "gpbFixPrinter";
             this.gpbFixPrinter.Size = new System.Drawing.Size(398, 151);
-            this.gpbFixPrinter.TabIndex = 4;
+            this.gpbFixPrinter.TabIndex = 0;
             this.gpbFixPrinter.TabStop = false;
             this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
             // 
@@ -121,7 +124,7 @@
             this.btnFixPrinter.Location = new System.Drawing.Point(44, 38);
             this.btnFixPrinter.Name = "btnFixPrinter";
             this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
-            this.btnFixPrinter.TabIndex = 0;
+            this.btnFixPrinter.TabIndex = 1;
             this.btnFixPrinter.Text = "Tentar corrigir minha impressora";
             this.btnFixPrinter.UseVisualStyleBackColor = true;
             this.btnFixPrinter.Click += new System.EventHandler(this.btnFixPrinter_Click);
@@ -144,7 +147,7 @@
             this.btnHelp.Location = new System.Drawing.Point(78, 256);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(255, 35);
-            this.btnHelp.TabIndex = 1;
+            this.btnHelp.TabIndex = 2;
             this.btnHelp.Text = "Ainda não consigo imprimir";
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
@@ -313,11 +316,12 @@
             // 
             // btnMainExit
             // 
+            this.btnMainExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnMainExit.Location = new System.Drawing.Point(10, 363);
             this.btnMainExit.Name = "btnMainExit";
             this.btnMainExit.Size = new System.Drawing.Size(420, 30);
-            this.btnMainExit.TabIndex = 4;
-            this.btnMainExit.Text = "Sair";
+            this.btnMainExit.TabIndex = 3;
+            this.btnMainExit.Text = "&Sair";
             this.btnMainExit.UseVisualStyleBackColor = true;
             this.btnMainExit.Click += new System.EventHandler(this.btnMainExit_Click);
             // 
@@ -330,7 +334,7 @@
             this.stsStatus.Name = "stsStatus";
             this.stsStatus.Size = new System.Drawing.Size(440, 22);
             this.stsStatus.SizingGrip = false;
-            this.stsStatus.TabIndex = 3;
+            this.stsStatus.TabIndex = 7;
             this.stsStatus.Text = "statusStrip1";
             // 
             // lblServiceState
@@ -377,6 +381,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.CancelButton = this.btnMainExit;
             this.ClientSize = new System.Drawing.Size(440, 425);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnMainExit);
@@ -384,6 +389,7 @@
             this.Controls.Add(this.stsStatus);
             this.Controls.Add(this.tabMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
