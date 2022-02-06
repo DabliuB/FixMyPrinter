@@ -127,6 +127,13 @@
     <Content Include="Imgs\png\AvatarLinkedin_MainDev.png" />
     <Content Include="Imgs\png\Delete.png" />
     <Content Include="Imgs\png\Help.png" />
+    <Content Include="Imgs\png\LogoCANON.png" />
+    <Content Include="Imgs\png\LogoEPSON.png" />
+    <Content Include="Imgs\png\LogoHP.png" />
+    <Content Include="Imgs\png\LogoXEROX.png" />
+    <None Include="Resources\LogoEPSON.png" />
+    <None Include="Resources\LogoCANON.png" />
+    <None Include="Resources\LogoHP.png" />
     <None Include="Imgs\png\Info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

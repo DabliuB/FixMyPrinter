@@ -16,5 +16,10 @@ namespace FixMyPrinter.Forms
         {
             InitializeComponent();
         }
+
+        private void btnHelpClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

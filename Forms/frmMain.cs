@@ -102,10 +102,9 @@ namespace FixMyPrinter
             return !Directory.EnumerateFileSystemEntries(path).Any();
         }
 
-        //Limpar os arquivos do spooler de impressão manualmente.
+        //Limpar os arquivos do diretório do spooler de impressão manualmente.
         private void ClearFilesFromSpooler()
         {
-
             //Pega a letra da unidade na qual o Windows está instalado.
             string sysDrive = Path.GetPathRoot(Environment.SystemDirectory);
 
@@ -171,6 +170,56 @@ namespace FixMyPrinter
         }
 
 
+        //Download de drivers.
+        private void btnDownloadHPDrivers_Click(object sender, EventArgs e)
+        {
+            const string msg = "Deseja acessar o site de download de drivers HP?";
+            const string caption = "Abrir link externo";
+            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("https://support.hp.com/br-pt/drivers/printers");
+            }
+        }
+
+        private void btnDownloadDriversEpson_Click(object sender, EventArgs e)
+        {
+            const string msg = "Deseja acessar o site de download de drivers Epson?";
+            const string caption = "Abrir link externo";
+            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("https://support.hp.com/br-pt/drivers/printers");
+            }
+        }
+
+        private void btnDownloadDriversXerox_Click(object sender, EventArgs e)
+        {
+            const string msg = "Deseja acessar o site de download de drivers Xerox?";
+            const string caption = "Abrir link externo";
+            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("https://epson.com.br/Suporte/Impressoras/sh/s1");
+            }
+        }
+
+        private void btnDownloadDriversCanon_Click(object sender, EventArgs e)
+        {
+            const string msg = "Deseja acessar o site de download de drivers Canon?";
+            const string caption = "Abrir link externo";
+            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("https://www.usa.canon.com/internet/portal/us/home/support/");
+            }
+        }
+
+
         //Abre no navegador padrão do usuário uma página que exibe o LinkedIn e o GitHub do desenvolvedor do software.
         private void pbAboutLinkedinProfile_Click(object sender, EventArgs e)
         {
@@ -210,7 +259,7 @@ namespace FixMyPrinter
         }
 
         //Encerrando a aplicação.
-        private void btnMainClose_Click(object sender, EventArgs e)
+        private void btnMainExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

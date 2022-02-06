@@ -118,25 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox2.Text" xml:space="preserve">
-    <value>Verifique se alguma das luzes do painel da sua impressora está piscando;
+    <value>▪ Verifique se alguma das luzes do painel da sua impressora está piscando;
 
-Se SIM:
-Verifique a qual função a luz está atrelada, caso seja referente aos cartuchos pode ser que os mesmos estejam com pouca tinta¹, vazios² ou até mesmo queimados³,
-¹ - nesse caso leve seu(s) cartucho(s) para realizar a recarga do(s) mesmo(s), caso não sejam recarregáveis, é preciso substituí-los;
-² - realize a recarga ou a substituição do(s) cartucho(s) de tinta (para impressora jato de tinta) ou do toner (caso sua impressora seja laser);
-³ - nessa situação é recomendado levar a impressora para a manutenção em uma assistência técnica especializada.</value>
+▪ Se SIM:
+▪ Verifique a qual função a luz está atrelada, caso seja referente aos cartuchos pode ser que os mesmos estejam com pouca tinta¹, vazios² ou até mesmo queimados³,
+
+ ¹ nesse caso leve seu(s) cartucho(s) para realizar a recarga do(s) mesmo(s), caso não sejam recarregáveis, será preciso substituí-los;
+
+ ² realize a recarga ou a substituição do(s) cartucho(s) de tinta (para impressora jato de tinta) ou do toner (caso sua impressora seja laser);
+
+ ³ será necessário realizar a susbstituição dos cartuchos.</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Desligue a sua impressora completamente, apertando o botão LIGA/DESLIGA ou ON/OFF, depois retire o cabo de energia da tomada;
+    <value>▪ Desligue a sua impressora completamente, apertando o botão LIGA/DESLIGA ou ON/OFF, depois retire o cabo de energia da tomada;
 
-Pressione e segure o botão LIGA/DESLIGA por 10 segundos e solte o botão;
+▪ Pressione e segure o botão LIGA/DESLIGA por 10 segundos e solte o botão;
 
-Aguarde 20 segundos;
+▪ Aguarde 20 segundos;
 
-Conecte a impressora na tomada novamente e ligue-a no botão LIGA/DESLIGA.
+▪ Conecte a impressora na tomada novamente e ligue-a no botão LIGA/DESLIGA.
 
-Tente imprimir.
-</value>
+▪ Tente imprimir.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>▪ Se nenhuma das alternativas anteriores lhe ajudou:
+
+▪  Entre em contato conosco para que possamos fazer um acesso remoto e verificar se o problema pode ser resolvido remotamente.
+ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente deste link:
+▪ https://anydesk.com/pt/downloads/thank-you?dv=win_exe (AnyDesk para Windows)
+
+▪ Talvez o problema da sua impressora seja em algum componente de hardware, nesse caso leve-a para a assistência técnica especializada.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

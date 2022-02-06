@@ -33,15 +33,16 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tpFixPrinter = new System.Windows.Forms.TabPage();
             this.gpbFixPrinter = new System.Windows.Forms.GroupBox();
+            this.lblSpoolerFilesCleaned = new System.Windows.Forms.Label();
             this.btnFixPrinter = new System.Windows.Forms.Button();
             this.lblHelp = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
             this.tpDownloadDrivers = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDownloadDriversCanon = new System.Windows.Forms.Button();
+            this.btnDownloadDriversXerox = new System.Windows.Forms.Button();
+            this.btnDownloadDriversEpson = new System.Windows.Forms.Button();
+            this.btnDownloadHPDrivers = new System.Windows.Forms.Button();
             this.tpAbout = new System.Windows.Forms.TabPage();
             this.btnDisclaimer = new System.Windows.Forms.Button();
             this.lblAboutProjectRepoLink = new System.Windows.Forms.LinkLabel();
@@ -49,14 +50,13 @@
             this.pbAboutLinkedinProfile = new System.Windows.Forms.PictureBox();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.lblDevelopedBy = new System.Windows.Forms.Label();
-            this.btnMainClose = new System.Windows.Forms.Button();
+            this.btnMainExit = new System.Windows.Forms.Button();
             this.stsStatus = new System.Windows.Forms.StatusStrip();
             this.lblServiceState = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmrServiceMonitor = new System.Windows.Forms.Timer(this.components);
             this.lblAboutVersion = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.lblSpoolerFilesCleaned = new System.Windows.Forms.Label();
             this.tabMain.SuspendLayout();
             this.tpFixPrinter.SuspendLayout();
             this.gpbFixPrinter.SuspendLayout();
@@ -102,6 +102,16 @@
             this.gpbFixPrinter.TabStop = false;
             this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
             // 
+            // lblSpoolerFilesCleaned
+            // 
+            this.lblSpoolerFilesCleaned.AutoSize = true;
+            this.lblSpoolerFilesCleaned.Location = new System.Drawing.Point(80, 116);
+            this.lblSpoolerFilesCleaned.Name = "lblSpoolerFilesCleaned";
+            this.lblSpoolerFilesCleaned.Size = new System.Drawing.Size(239, 17);
+            this.lblSpoolerFilesCleaned.TabIndex = 1;
+            this.lblSpoolerFilesCleaned.Text = "SPOOLER_CLEANING_STATUS_MESSAGE";
+            this.lblSpoolerFilesCleaned.Visible = false;
+            // 
             // btnFixPrinter
             // 
             this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,7 +133,7 @@
             this.lblHelp.Name = "lblHelp";
             this.lblHelp.Size = new System.Drawing.Size(249, 34);
             this.lblHelp.TabIndex = 3;
-            this.lblHelp.Text = "Se o procedimento acima não funcionou \r\n            clique no botão abaixo";
+            this.lblHelp.Text = "Se o procedimento acima não funcionou \r\n        tente seguir as seguintes dicas";
             // 
             // btnHelp
             // 
@@ -141,10 +151,10 @@
             // tpDownloadDrivers
             // 
             this.tpDownloadDrivers.Controls.Add(this.label1);
-            this.tpDownloadDrivers.Controls.Add(this.button4);
-            this.tpDownloadDrivers.Controls.Add(this.button3);
-            this.tpDownloadDrivers.Controls.Add(this.button2);
-            this.tpDownloadDrivers.Controls.Add(this.button1);
+            this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversCanon);
+            this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversXerox);
+            this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversEpson);
+            this.tpDownloadDrivers.Controls.Add(this.btnDownloadHPDrivers);
             this.tpDownloadDrivers.Location = new System.Drawing.Point(4, 26);
             this.tpDownloadDrivers.Name = "tpDownloadDrivers";
             this.tpDownloadDrivers.Padding = new System.Windows.Forms.Padding(3);
@@ -159,44 +169,56 @@
             this.label1.Location = new System.Drawing.Point(84, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 34);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Links rápidos para baixar os drivers das\r\nprincipais fabricantes de impressoras.";
             // 
-            // button4
+            // btnDownloadDriversCanon
             // 
-            this.button4.Location = new System.Drawing.Point(74, 218);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(263, 41);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Baixar drivers Canon";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversCanon.Image = global::FixMyPrinter.Properties.Resources.LogoCANON;
+            this.btnDownloadDriversCanon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadDriversCanon.Location = new System.Drawing.Point(74, 248);
+            this.btnDownloadDriversCanon.Name = "btnDownloadDriversCanon";
+            this.btnDownloadDriversCanon.Size = new System.Drawing.Size(263, 56);
+            this.btnDownloadDriversCanon.TabIndex = 3;
+            this.btnDownloadDriversCanon.Text = "Baixar drivers Canon";
+            this.btnDownloadDriversCanon.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversCanon.Click += new System.EventHandler(this.btnDownloadDriversCanon_Click);
             // 
-            // button3
+            // btnDownloadDriversXerox
             // 
-            this.button3.Location = new System.Drawing.Point(74, 171);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(263, 41);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Baixar drivers Xerox";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversXerox.Image = global::FixMyPrinter.Properties.Resources.LogoXEROX;
+            this.btnDownloadDriversXerox.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadDriversXerox.Location = new System.Drawing.Point(74, 186);
+            this.btnDownloadDriversXerox.Name = "btnDownloadDriversXerox";
+            this.btnDownloadDriversXerox.Size = new System.Drawing.Size(263, 56);
+            this.btnDownloadDriversXerox.TabIndex = 2;
+            this.btnDownloadDriversXerox.Text = "Baixar drivers Xerox";
+            this.btnDownloadDriversXerox.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversXerox.Click += new System.EventHandler(this.btnDownloadDriversXerox_Click);
             // 
-            // button2
+            // btnDownloadDriversEpson
             // 
-            this.button2.Location = new System.Drawing.Point(74, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 41);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Baixar drivers Epson";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversEpson.Image = global::FixMyPrinter.Properties.Resources.LogoEPSON;
+            this.btnDownloadDriversEpson.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadDriversEpson.Location = new System.Drawing.Point(74, 124);
+            this.btnDownloadDriversEpson.Name = "btnDownloadDriversEpson";
+            this.btnDownloadDriversEpson.Size = new System.Drawing.Size(263, 56);
+            this.btnDownloadDriversEpson.TabIndex = 1;
+            this.btnDownloadDriversEpson.Text = "Baixar drivers Epson";
+            this.btnDownloadDriversEpson.UseVisualStyleBackColor = true;
+            this.btnDownloadDriversEpson.Click += new System.EventHandler(this.btnDownloadDriversEpson_Click);
             // 
-            // button1
+            // btnDownloadHPDrivers
             // 
-            this.button1.Location = new System.Drawing.Point(74, 77);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Baixar drivers HP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDownloadHPDrivers.Image = global::FixMyPrinter.Properties.Resources.LogoHP1;
+            this.btnDownloadHPDrivers.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDownloadHPDrivers.Location = new System.Drawing.Point(74, 62);
+            this.btnDownloadHPDrivers.Name = "btnDownloadHPDrivers";
+            this.btnDownloadHPDrivers.Size = new System.Drawing.Size(263, 56);
+            this.btnDownloadHPDrivers.TabIndex = 0;
+            this.btnDownloadHPDrivers.Text = "Baixar drivers HP";
+            this.btnDownloadHPDrivers.UseVisualStyleBackColor = true;
+            this.btnDownloadHPDrivers.Click += new System.EventHandler(this.btnDownloadHPDrivers_Click);
             // 
             // tpAbout
             // 
@@ -216,7 +238,7 @@
             // 
             // btnDisclaimer
             // 
-            this.btnDisclaimer.Location = new System.Drawing.Point(157, 272);
+            this.btnDisclaimer.Location = new System.Drawing.Point(157, 271);
             this.btnDisclaimer.Name = "btnDisclaimer";
             this.btnDisclaimer.Size = new System.Drawing.Size(96, 32);
             this.btnDisclaimer.TabIndex = 5;
@@ -277,15 +299,15 @@
             this.lblDevelopedBy.TabIndex = 0;
             this.lblDevelopedBy.Text = "Desenvolvido por";
             // 
-            // btnMainClose
+            // btnMainExit
             // 
-            this.btnMainClose.Location = new System.Drawing.Point(10, 363);
-            this.btnMainClose.Name = "btnMainClose";
-            this.btnMainClose.Size = new System.Drawing.Size(420, 30);
-            this.btnMainClose.TabIndex = 4;
-            this.btnMainClose.Text = "Sair";
-            this.btnMainClose.UseVisualStyleBackColor = true;
-            this.btnMainClose.Click += new System.EventHandler(this.btnMainClose_Click);
+            this.btnMainExit.Location = new System.Drawing.Point(10, 363);
+            this.btnMainExit.Name = "btnMainExit";
+            this.btnMainExit.Size = new System.Drawing.Size(420, 30);
+            this.btnMainExit.TabIndex = 4;
+            this.btnMainExit.Text = "Sair";
+            this.btnMainExit.UseVisualStyleBackColor = true;
+            this.btnMainExit.Click += new System.EventHandler(this.btnMainExit_Click);
             // 
             // stsStatus
             // 
@@ -338,16 +360,6 @@
             this.lblVersion.TabIndex = 7;
             this.lblVersion.Text = "1.0.0.0";
             // 
-            // lblSpoolerFilesCleaned
-            // 
-            this.lblSpoolerFilesCleaned.AutoSize = true;
-            this.lblSpoolerFilesCleaned.Location = new System.Drawing.Point(80, 116);
-            this.lblSpoolerFilesCleaned.Name = "lblSpoolerFilesCleaned";
-            this.lblSpoolerFilesCleaned.Size = new System.Drawing.Size(239, 17);
-            this.lblSpoolerFilesCleaned.TabIndex = 1;
-            this.lblSpoolerFilesCleaned.Text = "SPOOLER_CLEANING_STATUS_MESSAGE";
-            this.lblSpoolerFilesCleaned.Visible = false;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -355,7 +367,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(440, 425);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.btnMainClose);
+            this.Controls.Add(this.btnMainExit);
             this.Controls.Add(this.lblAboutVersion);
             this.Controls.Add(this.stsStatus);
             this.Controls.Add(this.tabMain);
@@ -392,10 +404,10 @@
         private System.Windows.Forms.Button btnFixPrinter;
         private System.Windows.Forms.TabPage tpDownloadDrivers;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDownloadDriversCanon;
+        private System.Windows.Forms.Button btnDownloadDriversXerox;
+        private System.Windows.Forms.Button btnDownloadDriversEpson;
+        private System.Windows.Forms.Button btnDownloadHPDrivers;
         private System.Windows.Forms.TabPage tpAbout;
         private System.Windows.Forms.Button btnDisclaimer;
         private System.Windows.Forms.LinkLabel lblAboutProjectRepoLink;
@@ -403,7 +415,7 @@
         private System.Windows.Forms.PictureBox pbAboutLinkedinProfile;
         private System.Windows.Forms.Label lblDeveloperName;
         private System.Windows.Forms.Label lblDevelopedBy;
-        private System.Windows.Forms.Button btnMainClose;
+        private System.Windows.Forms.Button btnMainExit;
         private System.Windows.Forms.StatusStrip stsStatus;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.ToolStripStatusLabel lblServiceState;
