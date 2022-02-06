@@ -56,6 +56,7 @@
             this.tmrServiceMonitor = new System.Windows.Forms.Timer(this.components);
             this.lblAboutVersion = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
+            this.lblSpoolerFilesCleaned = new System.Windows.Forms.Label();
             this.tabMain.SuspendLayout();
             this.tpFixPrinter.SuspendLayout();
             this.gpbFixPrinter.SuspendLayout();
@@ -92,10 +93,11 @@
             // 
             // gpbFixPrinter
             // 
+            this.gpbFixPrinter.Controls.Add(this.lblSpoolerFilesCleaned);
             this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
             this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
             this.gpbFixPrinter.Name = "gpbFixPrinter";
-            this.gpbFixPrinter.Size = new System.Drawing.Size(398, 126);
+            this.gpbFixPrinter.Size = new System.Drawing.Size(398, 151);
             this.gpbFixPrinter.TabIndex = 4;
             this.gpbFixPrinter.TabStop = false;
             this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
@@ -117,7 +119,7 @@
             // 
             this.lblHelp.AutoSize = true;
             this.lblHelp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHelp.Location = new System.Drawing.Point(81, 189);
+            this.lblHelp.Location = new System.Drawing.Point(81, 210);
             this.lblHelp.Name = "lblHelp";
             this.lblHelp.Size = new System.Drawing.Size(249, 34);
             this.lblHelp.TabIndex = 3;
@@ -128,7 +130,7 @@
             this.btnHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Image = global::FixMyPrinter.Properties.Resources.Help;
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(78, 235);
+            this.btnHelp.Location = new System.Drawing.Point(78, 256);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(255, 35);
             this.btnHelp.TabIndex = 1;
@@ -336,6 +338,16 @@
             this.lblVersion.TabIndex = 7;
             this.lblVersion.Text = "1.0.0.0";
             // 
+            // lblSpoolerFilesCleaned
+            // 
+            this.lblSpoolerFilesCleaned.AutoSize = true;
+            this.lblSpoolerFilesCleaned.Location = new System.Drawing.Point(80, 116);
+            this.lblSpoolerFilesCleaned.Name = "lblSpoolerFilesCleaned";
+            this.lblSpoolerFilesCleaned.Size = new System.Drawing.Size(239, 17);
+            this.lblSpoolerFilesCleaned.TabIndex = 1;
+            this.lblSpoolerFilesCleaned.Text = "SPOOLER_CLEANING_STATUS_MESSAGE";
+            this.lblSpoolerFilesCleaned.Visible = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -358,6 +370,7 @@
             this.tpFixPrinter.ResumeLayout(false);
             this.tpFixPrinter.PerformLayout();
             this.gpbFixPrinter.ResumeLayout(false);
+            this.gpbFixPrinter.PerformLayout();
             this.tpDownloadDrivers.ResumeLayout(false);
             this.tpDownloadDrivers.PerformLayout();
             this.tpAbout.ResumeLayout(false);
@@ -398,6 +411,7 @@
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label lblAboutVersion;
         private System.Windows.Forms.GroupBox gpbFixPrinter;
+        private System.Windows.Forms.Label lblSpoolerFilesCleaned;
     }
 }
 

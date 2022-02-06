@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Security.Principal;
-using FixMyPrinter.Forms;
 using System.ServiceProcess;
-using System.Management;
+using System.IO;
+using System.Linq;
+using FixMyPrinter.Forms;
 
 namespace FixMyPrinter
 {
@@ -95,7 +96,44 @@ namespace FixMyPrinter
                 spooler.Start();
             }
         }
+        //Verifica se existem arquivos no diretório.
+        public static bool IsDirectoryEmpty(string path)
+        {
+            return !Directory.EnumerateFileSystemEntries(path).Any();
+        }
 
+        //Limpar os arquivos do spooler de impressão manualmente.
+        private void ClearFilesFromSpooler()
+        {
+
+            //Pega a letra da unidade na qual o Windows está instalado.
+            string sysDrive = Path.GetPathRoot(Environment.SystemDirectory);
+
+            if (IsDirectoryEmpty(sysDrive + @"Windows\System32\spool\PRINTERS") == false)
+            {
+                //Verifica o diretório do spooler por arquivos na fila e os deleta, se existirem.
+                DirectoryInfo dirInfo = new DirectoryInfo(sysDrive + @"Windows\System32\spool\PRINTERS");
+
+                foreach (FileInfo file in dirInfo.EnumerateFiles())
+                {
+                    file.Delete();
+                }
+                foreach (DirectoryInfo subDirectory in dirInfo.EnumerateDirectories())
+                {
+                    subDirectory.Delete(true);
+                }
+
+                lblSpoolerFilesCleaned.Visible = true;
+                lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.ForestGreen;
+                lblSpoolerFilesCleaned.Text = "Os arquivos do spooler foram limpos!";
+            }
+            else
+            {
+                lblSpoolerFilesCleaned.Visible = true;
+                lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.LightGray;
+                lblSpoolerFilesCleaned.Text = "Nenhum arquivo no spooler para limpar.";
+            }
+        }
 
         //Rotina que recarrega o serviço para limpar a fila de impressão.
         private void ReloadSpooler()
@@ -103,6 +141,10 @@ namespace FixMyPrinter
             //Parando o serviço do spooler de impressão
             AutoClosingMessageBox.Show("Parando o serviço do Spooler de impressão...", "Status", 1300);
             spooler.Stop();
+
+            //Limpa os arquivos do spooler, se existirem.
+            ClearFilesFromSpooler();
+
             //Iniciando o serviço do Spooler de impressão
             AutoClosingMessageBox.Show("Reiniciando o serviço do Spooler de impressão...", "Status", 1300);
             spooler.Start();
