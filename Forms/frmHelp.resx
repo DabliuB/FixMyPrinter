@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="txtHelpAlternative2.Text" xml:space="preserve">
     <value>▪ Verifique se alguma das luzes do painel da sua impressora está piscando;
 
 ▪ Se SIM:
@@ -129,7 +129,7 @@
 
  ³ será necessário realizar a susbstituição dos cartuchos.</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="txtHelpAlternative1.Text" xml:space="preserve">
     <value>▪ Desligue a sua impressora completamente, apertando o botão LIGA/DESLIGA ou ON/OFF, depois retire o cabo de energia da tomada;
 
 ▪ Pressione e segure o botão LIGA/DESLIGA por 10 segundos e solte o botão;
@@ -140,7 +140,7 @@
 
 ▪ Tente imprimir.</value>
   </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
+  <data name="txtHelpAlternative3.Text" xml:space="preserve">
     <value>▪ Se nenhuma das alternativas anteriores lhe ajudou:
 
 ▪  Entre em contato conosco para que possamos fazer um acesso remoto e verificar se o problema pode ser resolvido remotamente.

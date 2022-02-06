@@ -29,64 +29,65 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHelp));
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtHelpAlternative2 = new System.Windows.Forms.RichTextBox();
+            this.lblHelpAlternative2 = new System.Windows.Forms.Label();
+            this.txtHelpAlternative1 = new System.Windows.Forms.RichTextBox();
+            this.lblHelpAlternative1 = new System.Windows.Forms.Label();
             this.btnHelpClose = new System.Windows.Forms.Button();
             this.pnlHelpFooter = new System.Windows.Forms.Panel();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtHelpAlternative3 = new System.Windows.Forms.RichTextBox();
+            this.lblHelpAlternative3 = new System.Windows.Forms.Label();
             this.pbLogoHelp = new System.Windows.Forms.PictureBox();
             this.pnlHelpFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoHelp)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox2
+            // txtHelpAlternative2
             // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(11, 260);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(1001, 185);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.TabStop = false;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.txtHelpAlternative2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative2.Location = new System.Drawing.Point(11, 260);
+            this.txtHelpAlternative2.Name = "txtHelpAlternative2";
+            this.txtHelpAlternative2.Size = new System.Drawing.Size(1001, 185);
+            this.txtHelpAlternative2.TabIndex = 4;
+            this.txtHelpAlternative2.TabStop = false;
+            this.txtHelpAlternative2.Text = resources.GetString("txtHelpAlternative2.Text");
             // 
-            // label2
+            // lblHelpAlternative2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 236);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Alternativa 2";
+            this.lblHelpAlternative2.AutoSize = true;
+            this.lblHelpAlternative2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelpAlternative2.Location = new System.Drawing.Point(18, 236);
+            this.lblHelpAlternative2.Name = "lblHelpAlternative2";
+            this.lblHelpAlternative2.Size = new System.Drawing.Size(108, 21);
+            this.lblHelpAlternative2.TabIndex = 3;
+            this.lblHelpAlternative2.Text = "Alternativa 2";
             // 
-            // richTextBox1
+            // txtHelpAlternative1
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(11, 57);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1001, 176);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.txtHelpAlternative1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative1.Location = new System.Drawing.Point(11, 57);
+            this.txtHelpAlternative1.Name = "txtHelpAlternative1";
+            this.txtHelpAlternative1.Size = new System.Drawing.Size(1001, 176);
+            this.txtHelpAlternative1.TabIndex = 2;
+            this.txtHelpAlternative1.TabStop = false;
+            this.txtHelpAlternative1.Text = resources.GetString("txtHelpAlternative1.Text");
             // 
-            // label1
+            // lblHelpAlternative1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Alternativa 1";
+            this.lblHelpAlternative1.AutoSize = true;
+            this.lblHelpAlternative1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelpAlternative1.Location = new System.Drawing.Point(18, 33);
+            this.lblHelpAlternative1.Name = "lblHelpAlternative1";
+            this.lblHelpAlternative1.Size = new System.Drawing.Size(108, 21);
+            this.lblHelpAlternative1.TabIndex = 1;
+            this.lblHelpAlternative1.Text = "Alternativa 1";
             // 
             // btnHelpClose
             // 
             this.btnHelpClose.Location = new System.Drawing.Point(12, 7);
             this.btnHelpClose.Name = "btnHelpClose";
             this.btnHelpClose.Size = new System.Drawing.Size(988, 30);
-            this.btnHelpClose.TabIndex = 7;
+            this.btnHelpClose.TabIndex = 0;
             this.btnHelpClose.Text = "Fechar";
             this.btnHelpClose.UseVisualStyleBackColor = true;
             this.btnHelpClose.Click += new System.EventHandler(this.btnHelpClose_Click);
@@ -101,24 +102,25 @@
             this.pnlHelpFooter.Size = new System.Drawing.Size(1013, 45);
             this.pnlHelpFooter.TabIndex = 8;
             // 
-            // richTextBox3
+            // txtHelpAlternative3
             // 
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Location = new System.Drawing.Point(11, 472);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(1001, 126);
-            this.richTextBox3.TabIndex = 10;
-            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            this.txtHelpAlternative3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative3.Location = new System.Drawing.Point(11, 472);
+            this.txtHelpAlternative3.Name = "txtHelpAlternative3";
+            this.txtHelpAlternative3.Size = new System.Drawing.Size(1001, 126);
+            this.txtHelpAlternative3.TabIndex = 6;
+            this.txtHelpAlternative3.TabStop = false;
+            this.txtHelpAlternative3.Text = resources.GetString("txtHelpAlternative3.Text");
             // 
-            // label3
+            // lblHelpAlternative3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 448);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 21);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Alternativa 3";
+            this.lblHelpAlternative3.AutoSize = true;
+            this.lblHelpAlternative3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelpAlternative3.Location = new System.Drawing.Point(18, 448);
+            this.lblHelpAlternative3.Name = "lblHelpAlternative3";
+            this.lblHelpAlternative3.Size = new System.Drawing.Size(108, 21);
+            this.lblHelpAlternative3.TabIndex = 5;
+            this.lblHelpAlternative3.Text = "Alternativa 3";
             // 
             // pbLogoHelp
             // 
@@ -136,13 +138,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 651);
             this.Controls.Add(this.pbLogoHelp);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtHelpAlternative3);
+            this.Controls.Add(this.lblHelpAlternative3);
             this.Controls.Add(this.pnlHelpFooter);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtHelpAlternative2);
+            this.Controls.Add(this.lblHelpAlternative2);
+            this.Controls.Add(this.txtHelpAlternative1);
+            this.Controls.Add(this.lblHelpAlternative1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -161,14 +163,14 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox txtHelpAlternative2;
+        private System.Windows.Forms.Label lblHelpAlternative2;
+        private System.Windows.Forms.RichTextBox txtHelpAlternative1;
+        private System.Windows.Forms.Label lblHelpAlternative1;
         private System.Windows.Forms.Button btnHelpClose;
         private System.Windows.Forms.Panel pnlHelpFooter;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox txtHelpAlternative3;
+        private System.Windows.Forms.Label lblHelpAlternative3;
         private System.Windows.Forms.PictureBox pbLogoHelp;
     }
 }
