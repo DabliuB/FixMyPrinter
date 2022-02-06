@@ -9,7 +9,8 @@ Esta solução visa permitir ao usuário reiniciar o serviço do * *Spooler de i
 Além de deixar alguns atalhos para o download de drivers para a instalação de sua impressora.
 
 
-* *A razão primordial para a existência deste software surgiu de uma necessidade dos usuários da empresa de manutenção onde trabalho.* *
-* *Apesar de acessar o console de gerenciamento de serviços do Windows parecer algo trivial, a maioria dos usuários comuns não sabem fazê-lo,* *
-* *e com este software simples e portátil podemos deixar um atalho na Área de Trabalho dos nossos clientes para que eles tentem resolver problemas básicos* *
-* *de impressão que irão economizar nosso tempo de trabalho em acessos remotos.* *
+Motivação
+>_A razão primordial para a existência deste software surgiu de uma necessidade dos usuários da empresa de manutenção onde trabalho.
+Apesar de acessar o console de gerenciamento de serviços do Windows parecer algo trivial, a maioria dos usuários comuns não sabem fazê-lo,
+e com este software simples e portátil podemos deixar um atalho na Área de Trabalho dos nossos clientes para que eles tentem resolver problemas básicos
+de impressão que se traduzem em economia de tempo de serviço em acessos remotos._
