@@ -259,6 +259,12 @@ namespace FixMyPrinter
             frmDisclaimer formDisclaimer = new frmDisclaimer();
             formDisclaimer.ShowDialog();
         }
+        //Exibe o formulário com a licneça de uso do software.
+        private void btnLicense_Click(object sender, EventArgs e)
+        {
+            frmLicense formLicense = new frmLicense();
+            formLicense.ShowDialog();
+        }
 
         //Encerrando a aplicação.
         private void btnMainExit_Click(object sender, EventArgs e)

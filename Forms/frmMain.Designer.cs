@@ -44,6 +44,7 @@
             this.btnDownloadDriversEpson = new System.Windows.Forms.Button();
             this.btnDownloadHPDrivers = new System.Windows.Forms.Button();
             this.tpAbout = new System.Windows.Forms.TabPage();
+            this.btnLicense = new System.Windows.Forms.Button();
             this.btnDisclaimer = new System.Windows.Forms.Button();
             this.lblAboutProjectRepoLink = new System.Windows.Forms.LinkLabel();
             this.lblGitHubRepo = new System.Windows.Forms.Label();
@@ -222,6 +223,7 @@
             // 
             // tpAbout
             // 
+            this.tpAbout.Controls.Add(this.btnLicense);
             this.tpAbout.Controls.Add(this.btnDisclaimer);
             this.tpAbout.Controls.Add(this.lblAboutProjectRepoLink);
             this.tpAbout.Controls.Add(this.lblGitHubRepo);
@@ -236,9 +238,19 @@
             this.tpAbout.Text = "Sobre";
             this.tpAbout.UseVisualStyleBackColor = true;
             // 
+            // btnLicense
+            // 
+            this.btnLicense.Location = new System.Drawing.Point(208, 271);
+            this.btnLicense.Name = "btnLicense";
+            this.btnLicense.Size = new System.Drawing.Size(96, 32);
+            this.btnLicense.TabIndex = 6;
+            this.btnLicense.Text = "Licença";
+            this.btnLicense.UseVisualStyleBackColor = true;
+            this.btnLicense.Click += new System.EventHandler(this.btnLicense_Click);
+            // 
             // btnDisclaimer
             // 
-            this.btnDisclaimer.Location = new System.Drawing.Point(157, 271);
+            this.btnDisclaimer.Location = new System.Drawing.Point(106, 271);
             this.btnDisclaimer.Name = "btnDisclaimer";
             this.btnDisclaimer.Size = new System.Drawing.Size(96, 32);
             this.btnDisclaimer.TabIndex = 5;
@@ -424,6 +436,7 @@
         private System.Windows.Forms.Label lblAboutVersion;
         private System.Windows.Forms.GroupBox gpbFixPrinter;
         private System.Windows.Forms.Label lblSpoolerFilesCleaned;
+        private System.Windows.Forms.Button btnLicense;
     }
 }
 
