@@ -32,9 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tpFixPrinter = new System.Windows.Forms.TabPage();
+            this.gpbFixPrinter = new System.Windows.Forms.GroupBox();
+            this.btnFixPrinter = new System.Windows.Forms.Button();
             this.lblHelp = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.btnFixPrinter = new System.Windows.Forms.Button();
             this.tpDownloadDrivers = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,14 +56,13 @@
             this.tmrServiceMonitor = new System.Windows.Forms.Timer(this.components);
             this.lblAboutVersion = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.gpbFixPrinter = new System.Windows.Forms.GroupBox();
             this.tabMain.SuspendLayout();
             this.tpFixPrinter.SuspendLayout();
+            this.gpbFixPrinter.SuspendLayout();
             this.tpDownloadDrivers.SuspendLayout();
             this.tpAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAboutLinkedinProfile)).BeginInit();
             this.stsStatus.SuspendLayout();
-            this.gpbFixPrinter.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -90,6 +90,29 @@
             this.tpFixPrinter.Text = "Corrigir impressora";
             this.tpFixPrinter.UseVisualStyleBackColor = true;
             // 
+            // gpbFixPrinter
+            // 
+            this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
+            this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
+            this.gpbFixPrinter.Name = "gpbFixPrinter";
+            this.gpbFixPrinter.Size = new System.Drawing.Size(398, 126);
+            this.gpbFixPrinter.TabIndex = 4;
+            this.gpbFixPrinter.TabStop = false;
+            this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
+            // 
+            // btnFixPrinter
+            // 
+            this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
+            this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFixPrinter.Location = new System.Drawing.Point(44, 32);
+            this.btnFixPrinter.Name = "btnFixPrinter";
+            this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
+            this.btnFixPrinter.TabIndex = 0;
+            this.btnFixPrinter.Text = "Tentar corrigir minha impressora";
+            this.btnFixPrinter.UseVisualStyleBackColor = true;
+            this.btnFixPrinter.Click += new System.EventHandler(this.btnFixPrinter_Click);
+            // 
             // lblHelp
             // 
             this.lblHelp.AutoSize = true;
@@ -112,19 +135,6 @@
             this.btnHelp.Text = "Ainda não consigo imprimir";
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // btnFixPrinter
-            // 
-            this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
-            this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFixPrinter.Location = new System.Drawing.Point(44, 32);
-            this.btnFixPrinter.Name = "btnFixPrinter";
-            this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
-            this.btnFixPrinter.TabIndex = 0;
-            this.btnFixPrinter.Text = "Tentar corrigir minha impressora";
-            this.btnFixPrinter.UseVisualStyleBackColor = true;
-            this.btnFixPrinter.Click += new System.EventHandler(this.btnFixPrinter_Click);
             // 
             // tpDownloadDrivers
             // 
@@ -297,8 +307,9 @@
             // lblStatus
             // 
             this.lblStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(42, 17);
+            this.lblStatus.Size = new System.Drawing.Size(45, 17);
             this.lblStatus.Text = "Status.";
             // 
             // tmrServiceMonitor
@@ -325,16 +336,6 @@
             this.lblVersion.TabIndex = 7;
             this.lblVersion.Text = "versão";
             // 
-            // gpbFixPrinter
-            // 
-            this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
-            this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
-            this.gpbFixPrinter.Name = "gpbFixPrinter";
-            this.gpbFixPrinter.Size = new System.Drawing.Size(398, 126);
-            this.gpbFixPrinter.TabIndex = 4;
-            this.gpbFixPrinter.TabStop = false;
-            this.gpbFixPrinter.Text = "Resolver problemas com a fila de impressão";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -355,6 +356,7 @@
             this.tabMain.ResumeLayout(false);
             this.tpFixPrinter.ResumeLayout(false);
             this.tpFixPrinter.PerformLayout();
+            this.gpbFixPrinter.ResumeLayout(false);
             this.tpDownloadDrivers.ResumeLayout(false);
             this.tpDownloadDrivers.PerformLayout();
             this.tpAbout.ResumeLayout(false);
@@ -362,7 +364,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAboutLinkedinProfile)).EndInit();
             this.stsStatus.ResumeLayout(false);
             this.stsStatus.PerformLayout();
-            this.gpbFixPrinter.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
