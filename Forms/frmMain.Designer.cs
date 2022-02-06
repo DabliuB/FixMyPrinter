@@ -105,7 +105,7 @@
             this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
             this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFixPrinter.Location = new System.Drawing.Point(44, 32);
+            this.btnFixPrinter.Location = new System.Drawing.Point(44, 38);
             this.btnFixPrinter.Name = "btnFixPrinter";
             this.btnFixPrinter.Size = new System.Drawing.Size(310, 62);
             this.btnFixPrinter.TabIndex = 0;
