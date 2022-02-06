@@ -120,7 +120,7 @@
   <data name="txtDisclaimer.Text" xml:space="preserve">
     <value>Todos os ícones e nomes de marcas utilizados e/ou mencionados neste programa de computador são de propriedade e/ou são marcas registradas de seus respectivos donos, e são utilizados unicamente com a finalidade de simplificar e melhorar a utilização do software de forma visual, visto que seu público alvo são usuários leigos.
 
-O desenvolvedor não possui qualquer vínculo com as marcas citadas neste software.
+Este programa não realiza nenhuma modificação direta na sua impressora, ele apenas manipula o sistema operacional (Windows) buscando liberar a fila de impressão.
 
 O código fonte deste software está disponível para consulta e modificação no perfil do GitHub
 do desenvolvedor, sinta-se a vontade para visualizar o que o programa faz e até mesmo adicionar

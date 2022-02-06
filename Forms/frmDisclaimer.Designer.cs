@@ -85,7 +85,7 @@
             this.Name = "frmDisclaimer";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aviso legal";
+            this.Text = "Considerações gerais";
             this.pnlDisclaimerFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
