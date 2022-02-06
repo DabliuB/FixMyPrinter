@@ -45,6 +45,7 @@
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "Fechar";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pnlDisclaimerFooter
             // 
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 291);
+            this.ClientSize = new System.Drawing.Size(655, 287);
             this.ControlBox = false;
             this.Controls.Add(this.pnlDisclaimerFooter);
             this.Controls.Add(this.txtLicense);
