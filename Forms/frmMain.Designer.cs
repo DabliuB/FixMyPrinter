@@ -301,8 +301,8 @@
             // 
             this.lblServiceState.Image = global::FixMyPrinter.Properties.Resources.Info;
             this.lblServiceState.Name = "lblServiceState";
-            this.lblServiceState.Size = new System.Drawing.Size(99, 17);
-            this.lblServiceState.Text = "O serviço está:";
+            this.lblServiceState.Size = new System.Drawing.Size(102, 17);
+            this.lblServiceState.Text = " O serviço está:";
             // 
             // lblStatus
             // 
