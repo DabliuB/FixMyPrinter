@@ -43,7 +43,7 @@ namespace FixMyPrinter
 
             if (spooler.Status == ServiceControllerStatus.Running)
             {
-                lblStatus.Text = "sendo executado.";
+                lblStatus.Text = "em execução.";
             }
             else if (spooler.Status == ServiceControllerStatus.Stopped)
             {
