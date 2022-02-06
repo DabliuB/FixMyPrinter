@@ -330,11 +330,11 @@
             // 
             this.lblVersion.AutoSize = true;
             this.lblVersion.Enabled = false;
-            this.lblVersion.Location = new System.Drawing.Point(368, 405);
+            this.lblVersion.Location = new System.Drawing.Point(367, 405);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(47, 17);
+            this.lblVersion.Size = new System.Drawing.Size(45, 17);
             this.lblVersion.TabIndex = 7;
-            this.lblVersion.Text = "versão";
+            this.lblVersion.Text = "1.0.0.0";
             // 
             // frmMain
             // 
