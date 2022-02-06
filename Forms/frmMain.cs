@@ -24,6 +24,7 @@ namespace FixMyPrinter
         //Flag utilizada na verificação do status do serviço.
         bool IsServiceDisabled = false;
 
+        #region Rotinas
         //Configurando o timer que verifica o status do serviço.
         private void StartTimerServiceMonitor()
         {
@@ -101,7 +102,6 @@ namespace FixMyPrinter
         {
             return !Directory.EnumerateFileSystemEntries(path).Any();
         }
-
         //Limpar os arquivos do diretório do spooler de impressão manualmente.
         private void ClearFilesFromSpooler()
         {
@@ -133,7 +133,6 @@ namespace FixMyPrinter
                 lblSpoolerFilesCleaned.Text = "Nenhum arquivo no spooler para limpar.";
             }
         }
-
         //Rotina que recarrega o serviço para limpar a fila de impressão.
         private void ReloadSpooler()
         {
@@ -152,6 +151,10 @@ namespace FixMyPrinter
             IsServiceDisabled = false;
         }
         //Faz a verificação do status do serviço e se o mesmo não estiver desativado executa a rotina de recarregamento do spooler de impressão.
+        #endregion
+
+        #region Eventos
+        //Operação principal do programa.
         private void btnFixPrinter_Click(object sender, EventArgs e)
         {
             try
@@ -168,7 +171,6 @@ namespace FixMyPrinter
                 MessageBox.Show(ex.Message, errmsg, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         //Download de drivers.
         private void btnDownloadHPDrivers_Click(object sender, EventArgs e)
@@ -265,3 +267,4 @@ namespace FixMyPrinter
         }
     }
 }
+#endregion
