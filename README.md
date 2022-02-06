@@ -1,6 +1,9 @@
 # FixMyPrinter
 Soluções simples para problemas na hora de imprimir no Windows
 #
+
+Site do projeto no GitHub Pages https://pontiffex.github.io/FixMyPrinter/
+
 O objetivo deste software é tentar resolver simples problemas enfrentados por usuários comuns ao tentar imprimir.
 Muitas vezes ocorrem erros durante o processo e a fila de impressão do Windows acaba ficando cheia e o usuário,
 por sua vez não consegue imprimir, já que os documentos "emperrados" na fila não deixam a impressão acontecer normalmente.
@@ -12,7 +15,6 @@ Além de deixar alguns atalhos para o download de drivers para a instalação de
 
 https://github.com/pontiffex/FixMyPrinter/releases
 ![Camada 3](https://user-images.githubusercontent.com/14021232/152700917-be4aacea-2e96-45e0-903d-982a8fbcf1f9.png)
-FixMyPrinter v1
 
 Motivação
 >_A razão primordial para a existência deste software surgiu de uma necessidade dos usuários da empresa de manutenção onde trabalho.
