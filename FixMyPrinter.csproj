@@ -36,7 +36,8 @@
     <ApplicationIcon>Imgs\ico\print.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FixMyPrinter.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoClosingMessageBox, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
@@ -126,6 +127,7 @@
     <Content Include="Imgs\png\AvatarLinkedin_MainDev.png" />
     <Content Include="Imgs\png\Delete.png" />
     <Content Include="Imgs\png\Help.png" />
+    <None Include="Imgs\png\Info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
