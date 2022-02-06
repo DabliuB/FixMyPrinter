@@ -99,6 +99,7 @@
             // 
             this.gpbFixPrinter.Controls.Add(this.lblSpoolerFilesCleaned);
             this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
+            this.gpbFixPrinter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
             this.gpbFixPrinter.Name = "gpbFixPrinter";
             this.gpbFixPrinter.Size = new System.Drawing.Size(398, 151);
@@ -119,6 +120,7 @@
             // btnFixPrinter
             // 
             this.btnFixPrinter.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFixPrinter.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnFixPrinter.Image = global::FixMyPrinter.Properties.Resources.Apply;
             this.btnFixPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFixPrinter.Location = new System.Drawing.Point(44, 38);
@@ -133,11 +135,12 @@
             // 
             this.lblHelp.AutoSize = true;
             this.lblHelp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHelp.Location = new System.Drawing.Point(81, 210);
+            this.lblHelp.Location = new System.Drawing.Point(65, 210);
             this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(249, 34);
+            this.lblHelp.Size = new System.Drawing.Size(281, 34);
             this.lblHelp.TabIndex = 3;
-            this.lblHelp.Text = "Se o procedimento acima não funcionou \r\n        tente seguir as seguintes dicas";
+            this.lblHelp.Text = "     Se o procedimento acima não funcionou \r\ntente seguir as dicas clicando no bo" +
+    "tão abaixo";
             // 
             // btnHelp
             // 
@@ -170,11 +173,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(84, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Links rápidos para baixar os drivers das\r\nprincipais fabricantes de impressoras.";
+            this.label1.Text = "Links rápidos para baixar os drivers das\r\n principais fabricantes de impressoras." +
+    "";
             // 
             // btnDownloadDriversCanon
             // 
@@ -276,6 +281,7 @@
             // lblGitHubRepo
             // 
             this.lblGitHubRepo.AutoSize = true;
+            this.lblGitHubRepo.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblGitHubRepo.Location = new System.Drawing.Point(102, 207);
             this.lblGitHubRepo.Name = "lblGitHubRepo";
             this.lblGitHubRepo.Size = new System.Drawing.Size(206, 17);
@@ -308,6 +314,7 @@
             // lblDevelopedBy
             // 
             this.lblDevelopedBy.AutoSize = true;
+            this.lblDevelopedBy.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblDevelopedBy.Location = new System.Drawing.Point(150, 17);
             this.lblDevelopedBy.Name = "lblDevelopedBy";
             this.lblDevelopedBy.Size = new System.Drawing.Size(111, 17);
