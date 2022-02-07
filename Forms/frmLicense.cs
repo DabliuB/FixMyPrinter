@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/* PROJETO: FixMyPrinter
+ * AUTOR  : William Silva (pontiffex)
+ * DATA   : 05/02/2022
+ * CONTATO: wsilva@pontiffex.com.br
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace FixMyPrinter.Forms
