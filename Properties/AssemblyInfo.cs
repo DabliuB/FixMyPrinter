@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Pontiffex FixMyPrinter")]
 [assembly: AssemblyDescription("Corrigir problemas comuns associados à fila de impressão")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Pontiffex Sistemas")]
+[assembly: AssemblyCompany("Pontiffex Sistemas - wsilva@pontiffex.com.br")]
 [assembly: AssemblyProduct("Pontiffex FixMyPrinter")]
 [assembly: AssemblyCopyright("Copyright © 2022, Pontiffex Sistemas. Direitos reservados.")]
 [assembly: AssemblyTrademark("")]
