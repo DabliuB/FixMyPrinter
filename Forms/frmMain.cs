@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* PROJETO: FixMyPrinter
+ * AUTOR  : William Silva (pontiffex)
+ * DATA   : 05/02/2022
+ * CONTATO: wsilva@pontiffex.com.br
+ */
+
+using System;
 using System.Windows.Forms;
 using System.Security.Principal;
 using System.ServiceProcess;

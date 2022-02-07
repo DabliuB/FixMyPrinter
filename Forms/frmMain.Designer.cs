@@ -100,7 +100,7 @@
             this.gpbFixPrinter.Controls.Add(this.lblSpoolerFilesCleaned);
             this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
             this.gpbFixPrinter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gpbFixPrinter.Location = new System.Drawing.Point(6, 35);
+            this.gpbFixPrinter.Location = new System.Drawing.Point(6, 33);
             this.gpbFixPrinter.Name = "gpbFixPrinter";
             this.gpbFixPrinter.Size = new System.Drawing.Size(398, 151);
             this.gpbFixPrinter.TabIndex = 0;
