@@ -12,7 +12,7 @@ Esta solução visa permitir ao usuário reiniciar o serviço do * *Spooler de i
 Além de deixar alguns atalhos para o download de drivers para a instalação de sua impressora.
 
 ## Download do programa
-
+--> requer o [.NET Framework 4.6.2 (runtime)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462)
 https://github.com/pontiffex/FixMyPrinter/releases
 ![Camada 3](https://user-images.githubusercontent.com/14021232/152700917-be4aacea-2e96-45e0-903d-982a8fbcf1f9.png)
 
