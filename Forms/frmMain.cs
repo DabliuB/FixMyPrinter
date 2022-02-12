@@ -277,6 +277,6 @@ namespace FixMyPrinter
         {
             Application.Exit();
         }
+        #endregion
     }
 }
-#endregion
