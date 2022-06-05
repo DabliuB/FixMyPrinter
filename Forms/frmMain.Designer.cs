@@ -147,9 +147,9 @@
             this.btnHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Image = global::FixMyPrinter.Properties.Resources.Help;
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(78, 256);
+            this.btnHelp.Location = new System.Drawing.Point(50, 256);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(255, 35);
+            this.btnHelp.Size = new System.Drawing.Size(310, 35);
             this.btnHelp.TabIndex = 2;
             this.btnHelp.Text = "Ainda não consigo imprimir";
             this.btnHelp.UseVisualStyleBackColor = true;
@@ -402,7 +402,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pontiffex | FixMyPrinter";
+            this.Text = "FixMyPrinter | Limpar o spooler de impressão";
             this.tabMain.ResumeLayout(false);
             this.tpFixPrinter.ResumeLayout(false);
             this.tpFixPrinter.PerformLayout();

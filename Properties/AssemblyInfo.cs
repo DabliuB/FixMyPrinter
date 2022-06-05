@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Pontiffex FixMyPrinter")]
+[assembly: AssemblyTitle("FixMyPrinter")]
 [assembly: AssemblyDescription("Corrigir problemas comuns associados à fila de impressão")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Pontiffex Sistemas - wsilva@pontiffex.com.br")]
-[assembly: AssemblyProduct("Pontiffex FixMyPrinter")]
-[assembly: AssemblyCopyright("Copyright © 2022, Pontiffex Sistemas. Direitos reservados.")]
+[assembly: AssemblyCompany("veso Software - wbsilva@veso.dev.br")]
+[assembly: AssemblyProduct("veso Software FixMyPrinter")]
+[assembly: AssemblyCopyright("Copyright © 2022 veso Software, wbsilva@veso.dev.br. Direitos reservados.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.06.02.22")]
-[assembly: AssemblyFileVersion("1.06.02.22")]
+[assembly: AssemblyVersion("1.05.06.22")]
+[assembly: AssemblyFileVersion("1.05.06.22")]
