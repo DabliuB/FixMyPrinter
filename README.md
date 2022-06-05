@@ -2,7 +2,7 @@
 Soluções simples para problemas na hora de imprimir no Windows
 #
 
-Site do projeto no GitHub Pages https://vesosoftware.github.io/FixMyPrinter/
+Site do projeto no GitHub Pages https://dabliub.github.io/FixMyPrinter/
 
 O objetivo deste software é tentar resolver simples problemas enfrentados por usuários comuns ao tentar imprimir.
 Muitas vezes ocorrem erros durante o processo e a fila de impressão do Windows acaba ficando cheia e o usuário,
