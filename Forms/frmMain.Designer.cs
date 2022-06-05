@@ -272,10 +272,10 @@
             this.lblAboutProjectRepoLink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAboutProjectRepoLink.Location = new System.Drawing.Point(68, 231);
             this.lblAboutProjectRepoLink.Name = "lblAboutProjectRepoLink";
-            this.lblAboutProjectRepoLink.Size = new System.Drawing.Size(275, 17);
+            this.lblAboutProjectRepoLink.Size = new System.Drawing.Size(267, 17);
             this.lblAboutProjectRepoLink.TabIndex = 4;
             this.lblAboutProjectRepoLink.TabStop = true;
-            this.lblAboutProjectRepoLink.Text = "https://github.com/pontiffex/FixMyPrinter";
+            this.lblAboutProjectRepoLink.Text = "https://github.com/DabliuB/FixMyPrinter";
             this.lblAboutProjectRepoLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAboutProjectRepoLink_LinkClicked);
             // 
             // lblGitHubRepo
