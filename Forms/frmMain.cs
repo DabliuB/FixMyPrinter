@@ -1,7 +1,7 @@
 ﻿/* PROJETO: FixMyPrinter
- * AUTOR  : William Silva (pontiffex)
+ * AUTOR  : William Silva
  * DATA   : 05/02/2022
- * CONTATO: wsilva@pontiffex.com.br
+ * CONTATO: wbsilva@veso.dev.br
  */
 
 using System;
