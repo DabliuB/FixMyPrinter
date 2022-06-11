@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FixMyPrinter")]
 [assembly: AssemblyDescription("Corrigir problemas comuns associados à fila de impressão")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("veso Software - wbsilva@veso.dev.br")]
-[assembly: AssemblyProduct("veso Software FixMyPrinter")]
-[assembly: AssemblyCopyright("Copyright © 2022 veso Software, wbsilva@veso.dev.br. Direitos reservados.")]
+[assembly: AssemblyCompany("VESO Software - wbsilva@veso.dev.br")]
+[assembly: AssemblyProduct("VESO Software FixMyPrinter")]
+[assembly: AssemblyCopyright("Copyright © 2022 VESO Software, wbsilva@veso.dev.br. Direitos reservados.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
