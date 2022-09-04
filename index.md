@@ -42,5 +42,5 @@ Este software utiliza a biblioteca AutoClosingMessageBox, fornecida por Dmitry G
 
 ### Contato
 Fique a vontade para entrar em contato comigo!
-📫[Email profissional](mailto://wsilva@pontiffex.com.br)
+📫[Email profissional](mailto://wbsilva@veso.dev.br)
 
