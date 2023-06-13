@@ -22,5 +22,3 @@ Motivação
 Apesar de acessar o console de gerenciamento de serviços do Windows parecer algo trivial, a maioria dos usuários comuns não sabem fazê-lo,
 e com este software simples e portátil podemos deixar um atalho na Área de Trabalho dos nossos clientes para que eles tentem resolver problemas básicos
 de impressão que se traduzem em economia de tempo de serviço em acessos remotos._
-
-:warning: Este projeto não tem nenhuma relação com qualquer outro software, site, rede social e afins que possuam este mesmo nome  _"FixMyPrinter"_.
