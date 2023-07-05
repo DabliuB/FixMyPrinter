@@ -117,90 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnFixPrinter.Text" xml:space="preserve">
-    <value>Try to fix my printer</value>
-  </data>
-  <data name="gpbFixPrinter.Text" xml:space="preserve">
-    <value>Solve Problems with the Print Queue</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 210</value>
-  </data>
-  <data name="lblHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 34</value>
-  </data>
-  <data name="lblHelp.Text" xml:space="preserve">
-    <value>         If the procedure above did not work 
-try following the tips by clicking the button below</value>
-  </data>
-  <data name="btnHelp.Text" xml:space="preserve">
-    <value>I still can't print</value>
-  </data>
-  <data name="tpFixPrinter.Text" xml:space="preserve">
-    <value>Fix my printer</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 34</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Quick Links for Downloading Drivers for
-          major printer manufacturers.</value>
-  </data>
-  <data name="btnDownloadDriversCanon.Text" xml:space="preserve">
-    <value>Download Canon drivers</value>
-  </data>
-  <data name="btnDownloadDriversXerox.Text" xml:space="preserve">
-    <value>Download Xerox drivers</value>
-  </data>
-  <data name="btnDownloadDriversEpson.Text" xml:space="preserve">
-    <value>Download Epson drivers</value>
-  </data>
-  <data name="btnDownloadHPDrivers.Text" xml:space="preserve">
-    <value>Download HP drivers</value>
-  </data>
-  <data name="tpDownloadDrivers.Text" xml:space="preserve">
-    <value>Download drivers</value>
-  </data>
-  <data name="btnLicense.Text" xml:space="preserve">
-    <value>License</value>
-  </data>
-  <data name="lblGitHubRepo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 207</value>
-  </data>
-  <data name="lblGitHubRepo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 17</value>
-  </data>
-  <data name="lblGitHubRepo.Text" xml:space="preserve">
-    <value>Project repository on GitHub</value>
-  </data>
-  <data name="lblDevelopedBy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 17</value>
-  </data>
-  <data name="lblDevelopedBy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="lblDevelopedBy.Text" xml:space="preserve">
-    <value>Developed by</value>
-  </data>
-  <data name="tpAbout.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="btnMainExit.Text" xml:space="preserve">
-    <value>&amp;Exit</value>
-  </data>
-  <data name="lblServiceState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
-  </data>
-  <data name="lblServiceState.Text" xml:space="preserve">
-    <value>Service status:</value>
-  </data>
-  <data name="lblAboutVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 17</value>
-  </data>
-  <data name="lblAboutVersion.Text" xml:space="preserve">
-    <value>Version:</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAGBgAAAEACADIBgAAFgAAACgAAAAYAAAAMAAAAAEACAAAAAAAoAIAAAAAAAAAAAAAAAEAAAAA
@@ -234,8 +151,5 @@ try following the tips by clicking the button below</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAPwD8AD8A/AA/APwA
         PwD8AD8A/AA/APwAPwD8AD8A
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FixMyPrinter | Clear Windows Print Spooler</value>
   </data>
 </root>

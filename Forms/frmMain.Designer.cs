@@ -80,19 +80,19 @@
             // 
             // tpFixPrinter
             // 
+            resources.ApplyResources(this.tpFixPrinter, "tpFixPrinter");
             this.tpFixPrinter.Controls.Add(this.gpbFixPrinter);
             this.tpFixPrinter.Controls.Add(this.lblHelp);
             this.tpFixPrinter.Controls.Add(this.btnHelp);
-            resources.ApplyResources(this.tpFixPrinter, "tpFixPrinter");
             this.tpFixPrinter.Name = "tpFixPrinter";
             this.tpFixPrinter.UseVisualStyleBackColor = true;
             // 
             // gpbFixPrinter
             // 
+            resources.ApplyResources(this.gpbFixPrinter, "gpbFixPrinter");
             this.gpbFixPrinter.Controls.Add(this.lblSpoolerFilesCleaned);
             this.gpbFixPrinter.Controls.Add(this.btnFixPrinter);
             this.gpbFixPrinter.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            resources.ApplyResources(this.gpbFixPrinter, "gpbFixPrinter");
             this.gpbFixPrinter.Name = "gpbFixPrinter";
             this.gpbFixPrinter.TabStop = false;
             // 
@@ -126,12 +126,12 @@
             // 
             // tpDownloadDrivers
             // 
+            resources.ApplyResources(this.tpDownloadDrivers, "tpDownloadDrivers");
             this.tpDownloadDrivers.Controls.Add(this.label1);
             this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversCanon);
             this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversXerox);
             this.tpDownloadDrivers.Controls.Add(this.btnDownloadDriversEpson);
             this.tpDownloadDrivers.Controls.Add(this.btnDownloadHPDrivers);
-            resources.ApplyResources(this.tpDownloadDrivers, "tpDownloadDrivers");
             this.tpDownloadDrivers.Name = "tpDownloadDrivers";
             this.tpDownloadDrivers.UseVisualStyleBackColor = true;
             // 
@@ -143,38 +143,39 @@
             // 
             // btnDownloadDriversCanon
             // 
-            this.btnDownloadDriversCanon.Image = global::FixMyPrinter.Properties.Resources.LogoCANON;
             resources.ApplyResources(this.btnDownloadDriversCanon, "btnDownloadDriversCanon");
+            this.btnDownloadDriversCanon.Image = global::FixMyPrinter.Properties.Resources.LogoCANON;
             this.btnDownloadDriversCanon.Name = "btnDownloadDriversCanon";
             this.btnDownloadDriversCanon.UseVisualStyleBackColor = true;
             this.btnDownloadDriversCanon.Click += new System.EventHandler(this.btnDownloadDriversCanon_Click);
             // 
             // btnDownloadDriversXerox
             // 
-            this.btnDownloadDriversXerox.Image = global::FixMyPrinter.Properties.Resources.LogoXEROX;
             resources.ApplyResources(this.btnDownloadDriversXerox, "btnDownloadDriversXerox");
+            this.btnDownloadDriversXerox.Image = global::FixMyPrinter.Properties.Resources.LogoXEROX;
             this.btnDownloadDriversXerox.Name = "btnDownloadDriversXerox";
             this.btnDownloadDriversXerox.UseVisualStyleBackColor = true;
             this.btnDownloadDriversXerox.Click += new System.EventHandler(this.btnDownloadDriversXerox_Click);
             // 
             // btnDownloadDriversEpson
             // 
-            this.btnDownloadDriversEpson.Image = global::FixMyPrinter.Properties.Resources.LogoEPSON;
             resources.ApplyResources(this.btnDownloadDriversEpson, "btnDownloadDriversEpson");
+            this.btnDownloadDriversEpson.Image = global::FixMyPrinter.Properties.Resources.LogoEPSON;
             this.btnDownloadDriversEpson.Name = "btnDownloadDriversEpson";
             this.btnDownloadDriversEpson.UseVisualStyleBackColor = true;
             this.btnDownloadDriversEpson.Click += new System.EventHandler(this.btnDownloadDriversEpson_Click);
             // 
             // btnDownloadHPDrivers
             // 
-            this.btnDownloadHPDrivers.Image = global::FixMyPrinter.Properties.Resources.LogoHP1;
             resources.ApplyResources(this.btnDownloadHPDrivers, "btnDownloadHPDrivers");
+            this.btnDownloadHPDrivers.Image = global::FixMyPrinter.Properties.Resources.LogoHP1;
             this.btnDownloadHPDrivers.Name = "btnDownloadHPDrivers";
             this.btnDownloadHPDrivers.UseVisualStyleBackColor = true;
             this.btnDownloadHPDrivers.Click += new System.EventHandler(this.btnDownloadHPDrivers_Click);
             // 
             // tpAbout
             // 
+            resources.ApplyResources(this.tpAbout, "tpAbout");
             this.tpAbout.Controls.Add(this.btnLicense);
             this.tpAbout.Controls.Add(this.btnDisclaimer);
             this.tpAbout.Controls.Add(this.lblAboutProjectRepoLink);
@@ -182,7 +183,6 @@
             this.tpAbout.Controls.Add(this.pbAboutLinkedinProfile);
             this.tpAbout.Controls.Add(this.lblDeveloperName);
             this.tpAbout.Controls.Add(this.lblDevelopedBy);
-            resources.ApplyResources(this.tpAbout, "tpAbout");
             this.tpAbout.Name = "tpAbout";
             this.tpAbout.UseVisualStyleBackColor = true;
             // 
@@ -235,31 +235,31 @@
             // 
             // btnMainExit
             // 
-            this.btnMainExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnMainExit, "btnMainExit");
+            this.btnMainExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnMainExit.Name = "btnMainExit";
             this.btnMainExit.UseVisualStyleBackColor = true;
             this.btnMainExit.Click += new System.EventHandler(this.btnMainExit_Click);
             // 
             // stsStatus
             // 
+            resources.ApplyResources(this.stsStatus, "stsStatus");
             this.stsStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblServiceState,
             this.lblStatus});
-            resources.ApplyResources(this.stsStatus, "stsStatus");
             this.stsStatus.Name = "stsStatus";
             this.stsStatus.SizingGrip = false;
             // 
             // lblServiceState
             // 
+            resources.ApplyResources(this.lblServiceState, "lblServiceState");
             this.lblServiceState.Image = global::FixMyPrinter.Properties.Resources.Info;
             this.lblServiceState.Name = "lblServiceState";
-            resources.ApplyResources(this.lblServiceState, "lblServiceState");
             // 
             // lblStatus
             // 
-            this.lblStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.lblStatus, "lblStatus");
+            this.lblStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.lblStatus.Name = "lblStatus";
             // 
             // tmrServiceMonitor
