@@ -1,7 +1,7 @@
 ﻿/* PROJETO: FixMyPrinter
- * AUTOR  : William Silva
- * DATA   : 05/02/2022
- * CONTATO: wbsilva@veso.dev.br
+ * AUTOR  : William Silva - unclWill
+ * DATA   : 05/02/2022 (Criação) | Modificação: 05/07/2023
+ * CONTATO: williamsilvajdf@gmail.com
  */
 
 using System;
@@ -11,6 +11,7 @@ using System.ServiceProcess;
 using System.IO;
 using System.Linq;
 using FixMyPrinter.Forms;
+using System.Text;
 
 namespace FixMyPrinter
 {
@@ -24,11 +25,37 @@ namespace FixMyPrinter
             lblVersion.Text = Application.ProductVersion;
         }
 
-        //Variáveis globais da classe.
         //Definindo o Spooler como o serviço alvo dos procedimentos.
         ServiceController spooler = new ServiceController("Spooler");
         //Flag utilizada na verificação do status do serviço.
         bool IsServiceDisabled = false;
+
+        private static bool IsAdministrator()
+        {
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+        }
+
+        internal void WindowsRoleVerification()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("A manipulação de serviços do sistema exige que o programa seja executado por um usuário com privilégios administrativos." +
+                      "\nClique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'");
+
+            if (IsAdministrator() == false)
+            {
+                MessageBox.Show(sb.ToString(), "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Text = "FixMyPrinter";
+
+            }
+            else
+            {
+                this.Text = "FixMyPrinter | Administrador";
+            }
+        }
 
         #region Rotinas
         //Configurando o timer que verifica o status do serviço.
@@ -58,42 +85,20 @@ namespace FixMyPrinter
                 lblStatus.Text = "parado.";
             }
         }
-        //Retorna se o usuário atualmente logado é um Administrador do sistema.
-        private static bool IsAdministrator()
-        {
-            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
-            {
-                WindowsPrincipal principal = new WindowsPrincipal(identity);
-                return principal.IsInRole(WindowsBuiltInRole.Administrator);
-            }
-        }
-        //Se o usuário não for Admin exibe um aviso.
-        private void WindowsRoleVerification()
-        {
-            if (IsAdministrator() == false)
-            {
-                MessageBox.Show("A manipulação de serviços do sistema exige que o programa seja executado " +
-                                "por um usuário com privilégios administrativos.\n\n" +
-                                "Clique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'.", "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                this.Text = "FixMyPrinter";
-                
-            }
-            else
-            {
-                this.Text = "FixMyPrinter | Administrador";
-            }
-        }
+
         //Verifica o status do serviço.
         private void VerifyServiceStatus()
         {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("O serviço está desativado, será necessário inicializá-lo manualmente!" +
+                "Os serviços do Windows geralmente são exibidos em ordem alfabética, portanto procure pelos serviços inciados pela letra 'S' até encontrar o 'Spooler de Impressão', quando encontrar dê um duplo clique no serviço." +
+                "Em 'Tipo de inicialização' escolha 'Automático', em 'Status do serviço' pressione o botão 'Iniciar'." +
+                "O painel de gerenciamento de serviços irá ser exibido dentro de alguns segundos...");
+
             //Verificando se o serviço está parado
             if (spooler.StartType == ServiceStartMode.Disabled)
             {
-                MessageBox.Show("O serviço está desativado, será necessário inicializá-lo manualmente!\n\n" +
-                                "Os serviços do Windows geralmente são exibidos em ordem alfabética,\n\n" +
-                                "portanto procure pelos serviços inciados pela letra 'S' até encontrar o 'Spooler de Impressão', quando encontrar dê um duplo clique no serviço,\n\n" +
-                                "Em 'Tipo de inicialização' escolha 'Automático', em 'Status do serviço' pressione o botão 'Iniciar'.\n\n\n" +
-                                "O painel de gerenciamento de serviços irá ser exibido dentro de alguns segundos...", "Aviso");
+                MessageBox.Show(sb.ToString(), "Aviso");
                 //Abrindo o console de gerenciamento de serviços do Windows.
                 System.Diagnostics.Process.Start("services.msc");
                 IsServiceDisabled = true;
@@ -265,7 +270,7 @@ namespace FixMyPrinter
             frmDisclaimer formDisclaimer = new frmDisclaimer();
             formDisclaimer.ShowDialog();
         }
-        //Exibe o formulário com a licneça de uso do software.
+        //Exibe o formulário com a licença de uso do software.
         private void btnLicense_Click(object sender, EventArgs e)
         {
             frmLicense formLicense = new frmLicense();

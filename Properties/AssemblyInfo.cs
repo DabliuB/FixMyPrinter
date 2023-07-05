@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FixMyPrinter")]
+[assembly: AssemblyTitle("unclWill FixMyPrinter")]
 [assembly: AssemblyDescription("Corrigir problemas comuns associados à fila de impressão")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("VESO Software - wbsilva@veso.dev.br")]
-[assembly: AssemblyProduct("VESO Software FixMyPrinter")]
-[assembly: AssemblyCopyright("Copyright © 2022 VESO Software, wbsilva@veso.dev.br. Direitos reservados.")]
+[assembly: AssemblyCompany("unclWill - williamsilvajdf@gmail.com")]
+[assembly: AssemblyProduct("unclWill FixMyPrinter")]
+[assembly: AssemblyCopyright("Copyright © 2022-2023 unclWill, williamsilvajdf@gmail.com. Direitos reservados.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
