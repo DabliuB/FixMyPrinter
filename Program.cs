@@ -1,5 +1,5 @@
 ﻿/* PROJETO: FixMyPrinter
- * AUTOR  : William Silva | unclWill
+ * AUTOR  : William Silva - unclWill
  * DATA   : 05/02/2022 (Criação) | Modificação: 05/07/2023
  * CONTATO: williamsilvajdf@gmail.com
  */

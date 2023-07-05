@@ -131,14 +131,22 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Globals\Links.cs" />
-    <Compile Include="Globals\TextDescriptions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmDisclaimer.en.resx">
+      <DependentUpon>frmDisclaimer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDisclaimer.resx">
       <DependentUpon>frmDisclaimer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHelp.en.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLicense.en.resx">
+      <DependentUpon>frmLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLicense.resx">
       <DependentUpon>frmLicense.cs</DependentUpon>

@@ -1,4 +1,10 @@
-﻿
+﻿/* PROJETO : FixMyPrinter
+ * ARQUIVO : Classe Links
+ * OBJETIVO: Concentrar todos os links utilizados no programa.
+ * AUTOR   : William Silva - unclWill
+ * DATA    : 05/07/2023 (Criação) | Modificação: 05/07/2023
+ * CONTATO : williamsilvajdf@gmail.com
+ */
 
 using System;
 

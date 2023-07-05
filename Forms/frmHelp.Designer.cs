@@ -44,102 +44,67 @@
             // 
             // txtHelpAlternative2
             // 
+            resources.ApplyResources(this.txtHelpAlternative2, "txtHelpAlternative2");
             this.txtHelpAlternative2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHelpAlternative2.Location = new System.Drawing.Point(11, 260);
             this.txtHelpAlternative2.Name = "txtHelpAlternative2";
             this.txtHelpAlternative2.ReadOnly = true;
-            this.txtHelpAlternative2.Size = new System.Drawing.Size(990, 185);
-            this.txtHelpAlternative2.TabIndex = 4;
             this.txtHelpAlternative2.TabStop = false;
-            this.txtHelpAlternative2.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative2
             // 
-            this.lblHelpAlternative2.AutoSize = true;
-            this.lblHelpAlternative2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHelpAlternative2.Location = new System.Drawing.Point(18, 236);
+            resources.ApplyResources(this.lblHelpAlternative2, "lblHelpAlternative2");
             this.lblHelpAlternative2.Name = "lblHelpAlternative2";
-            this.lblHelpAlternative2.Size = new System.Drawing.Size(108, 21);
-            this.lblHelpAlternative2.TabIndex = 3;
-            this.lblHelpAlternative2.Text = "Alternativa 2";
             // 
             // txtHelpAlternative1
             // 
+            resources.ApplyResources(this.txtHelpAlternative1, "txtHelpAlternative1");
             this.txtHelpAlternative1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHelpAlternative1.Location = new System.Drawing.Point(11, 57);
             this.txtHelpAlternative1.Name = "txtHelpAlternative1";
             this.txtHelpAlternative1.ReadOnly = true;
-            this.txtHelpAlternative1.Size = new System.Drawing.Size(990, 176);
-            this.txtHelpAlternative1.TabIndex = 2;
             this.txtHelpAlternative1.TabStop = false;
-            this.txtHelpAlternative1.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative1
             // 
-            this.lblHelpAlternative1.AutoSize = true;
-            this.lblHelpAlternative1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHelpAlternative1.Location = new System.Drawing.Point(18, 33);
+            resources.ApplyResources(this.lblHelpAlternative1, "lblHelpAlternative1");
             this.lblHelpAlternative1.Name = "lblHelpAlternative1";
-            this.lblHelpAlternative1.Size = new System.Drawing.Size(108, 21);
-            this.lblHelpAlternative1.TabIndex = 1;
-            this.lblHelpAlternative1.Text = "Alternativa 1";
             // 
             // btnHelpClose
             // 
-            this.btnHelpClose.Location = new System.Drawing.Point(12, 7);
+            resources.ApplyResources(this.btnHelpClose, "btnHelpClose");
             this.btnHelpClose.Name = "btnHelpClose";
-            this.btnHelpClose.Size = new System.Drawing.Size(988, 30);
-            this.btnHelpClose.TabIndex = 0;
-            this.btnHelpClose.Text = "Fechar";
             this.btnHelpClose.UseVisualStyleBackColor = true;
             this.btnHelpClose.Click += new System.EventHandler(this.btnHelpClose_Click);
             // 
             // pnlHelpFooter
             // 
-            this.pnlHelpFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.pnlHelpFooter, "pnlHelpFooter");
             this.pnlHelpFooter.Controls.Add(this.btnHelpClose);
-            this.pnlHelpFooter.Location = new System.Drawing.Point(-1, 606);
             this.pnlHelpFooter.Name = "pnlHelpFooter";
-            this.pnlHelpFooter.Size = new System.Drawing.Size(1013, 45);
-            this.pnlHelpFooter.TabIndex = 8;
             // 
             // txtHelpAlternative3
             // 
+            resources.ApplyResources(this.txtHelpAlternative3, "txtHelpAlternative3");
             this.txtHelpAlternative3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHelpAlternative3.Location = new System.Drawing.Point(11, 472);
             this.txtHelpAlternative3.Name = "txtHelpAlternative3";
             this.txtHelpAlternative3.ReadOnly = true;
-            this.txtHelpAlternative3.Size = new System.Drawing.Size(990, 126);
-            this.txtHelpAlternative3.TabIndex = 6;
             this.txtHelpAlternative3.TabStop = false;
-            this.txtHelpAlternative3.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative3
             // 
-            this.lblHelpAlternative3.AutoSize = true;
-            this.lblHelpAlternative3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHelpAlternative3.Location = new System.Drawing.Point(18, 448);
+            resources.ApplyResources(this.lblHelpAlternative3, "lblHelpAlternative3");
             this.lblHelpAlternative3.Name = "lblHelpAlternative3";
-            this.lblHelpAlternative3.Size = new System.Drawing.Size(108, 21);
-            this.lblHelpAlternative3.TabIndex = 5;
-            this.lblHelpAlternative3.Text = "Alternativa 3";
             // 
             // pbLogoHelp
             // 
+            resources.ApplyResources(this.pbLogoHelp, "pbLogoHelp");
             this.pbLogoHelp.Image = global::FixMyPrinter.Properties.Resources.Help;
-            this.pbLogoHelp.Location = new System.Drawing.Point(956, 5);
             this.pbLogoHelp.Name = "pbLogoHelp";
-            this.pbLogoHelp.Size = new System.Drawing.Size(45, 46);
-            this.pbLogoHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoHelp.TabIndex = 11;
             this.pbLogoHelp.TabStop = false;
             // 
             // frmHelp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 651);
             this.Controls.Add(this.pbLogoHelp);
             this.Controls.Add(this.txtHelpAlternative3);
             this.Controls.Add(this.lblHelpAlternative3);
@@ -148,16 +113,10 @@
             this.Controls.Add(this.lblHelpAlternative2);
             this.Controls.Add(this.txtHelpAlternative1);
             this.Controls.Add(this.lblHelpAlternative1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmHelp";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ajuda";
-            this.Load += new System.EventHandler(this.frmHelp_Load);
             this.pnlHelpFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoHelp)).EndInit();
             this.ResumeLayout(false);

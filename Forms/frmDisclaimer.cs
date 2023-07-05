@@ -17,11 +17,6 @@ namespace FixMyPrinter.Forms
             InitializeComponent();
         }
 
-        private void frmDisclaimer_Load(object sender, EventArgs e)
-        {
-            txtDisclaimer.Text = TextDescriptions.ShowDisclaimerDescription();
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();

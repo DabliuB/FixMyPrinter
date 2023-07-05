@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisclaimer));
             this.btnClose = new System.Windows.Forms.Button();
             this.txtDisclaimer = new System.Windows.Forms.RichTextBox();
             this.pnlDisclaimerFooter = new System.Windows.Forms.Panel();
@@ -36,56 +37,38 @@
             // 
             // btnClose
             // 
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(12, 7);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(639, 30);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Fechar";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtDisclaimer
             // 
+            resources.ApplyResources(this.txtDisclaimer, "txtDisclaimer");
             this.txtDisclaimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisclaimer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDisclaimer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisclaimer.Location = new System.Drawing.Point(12, 12);
             this.txtDisclaimer.Name = "txtDisclaimer";
             this.txtDisclaimer.ReadOnly = true;
-            this.txtDisclaimer.Size = new System.Drawing.Size(639, 229);
-            this.txtDisclaimer.TabIndex = 1;
             this.txtDisclaimer.TabStop = false;
-            this.txtDisclaimer.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // pnlDisclaimerFooter
             // 
-            this.pnlDisclaimerFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.pnlDisclaimerFooter, "pnlDisclaimerFooter");
             this.pnlDisclaimerFooter.Controls.Add(this.btnClose);
-            this.pnlDisclaimerFooter.Location = new System.Drawing.Point(-2, 248);
             this.pnlDisclaimerFooter.Name = "pnlDisclaimerFooter";
-            this.pnlDisclaimerFooter.Size = new System.Drawing.Size(662, 45);
-            this.pnlDisclaimerFooter.TabIndex = 2;
             // 
             // frmDisclaimer
             // 
             this.AcceptButton = this.btnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 291);
             this.ControlBox = false;
             this.Controls.Add(this.pnlDisclaimerFooter);
             this.Controls.Add(this.txtDisclaimer);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDisclaimer";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Considerações gerais";
-            this.Load += new System.EventHandler(this.frmDisclaimer_Load);
             this.pnlDisclaimerFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 

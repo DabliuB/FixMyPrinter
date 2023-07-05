@@ -117,7 +117,66 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;txtHelpAlternative3.Name" xml:space="preserve">
+    <value>txtHelpAlternative3</value>
+  </data>
+  <data name="&gt;&gt;pnlHelpFooter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblHelpAlternative2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtHelpAlternative1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 176</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblHelpAlternative3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 21</value>
+  </data>
+  <data name="txtHelpAlternative3.Text" xml:space="preserve">
+    <value>▪ Se nenhuma das alternativas anteriores lhe ajudou:
+
+▪ Entre em contato conosco para que possamos fazer um acesso remoto e verificar se o problema pode ser resolvido remotamente.
+
+Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente deste link:
+▪ https://anydesk.com/pt/downloads/thank-you?dv=win_exe (AnyDesk para Windows)
+▪ Talvez o problema da sua impressora seja em algum componente de hardware, nesse caso leve-a para a assistência técnica especializada.</value>
+  </data>
+  <data name="pbLogoHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 46</value>
+  </data>
+  <data name="&gt;&gt;btnHelpClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHelpClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 7</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative1.Name" xml:space="preserve">
+    <value>txtHelpAlternative1</value>
+  </data>
+  <data name="&gt;&gt;pbLogoHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAGBgAAAEACADIBgAAFgAAACgAAAAYAAAAMAAAAAEACAAAAAAAoAIAAAAAAAAAAAAAAAEAAAAA
@@ -152,4 +211,235 @@
         BwDwAA8A+AAfAP4AfwD/AP8A
 </value>
   </data>
+  <data name="&gt;&gt;lblHelpAlternative3.Name" xml:space="preserve">
+    <value>lblHelpAlternative3</value>
+  </data>
+  <data name="pnlHelpFooter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="btnHelpClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>988, 30</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative1.Name" xml:space="preserve">
+    <value>lblHelpAlternative1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="&gt;&gt;pbLogoHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtHelpAlternative1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;pbLogoHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblHelpAlternative2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 21</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelpClose.Parent" xml:space="preserve">
+    <value>pnlHelpFooter</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbLogoHelp.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative2.Name" xml:space="preserve">
+    <value>txtHelpAlternative2</value>
+  </data>
+  <data name="&gt;&gt;btnHelpClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlHelpFooter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlHelpFooter.Name" xml:space="preserve">
+    <value>pnlHelpFooter</value>
+  </data>
+  <data name="txtHelpAlternative3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblHelpAlternative2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtHelpAlternative2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 185</value>
+  </data>
+  <data name="btnHelpClose.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="txtHelpAlternative3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 472</value>
+  </data>
+  <data name="lblHelpAlternative1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblHelpAlternative1.Text" xml:space="preserve">
+    <value>Alternativa 1</value>
+  </data>
+  <data name="txtHelpAlternative3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 126</value>
+  </data>
+  <data name="lblHelpAlternative1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="lblHelpAlternative2.Text" xml:space="preserve">
+    <value>Alternativa 2</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtHelpAlternative1.Text" xml:space="preserve">
+    <value>▪ Desligue a sua impressora completamente, apertando o botão LIGA/DESLIGA ou ON/OFF, depois retire o cabo de energia da tomada;
+
+▪ Pressione e segure o botão LIGA/DESLIGA por 10 segundos e solte o botão;
+
+▪ Aguarde 20 segundos;
+
+▪ Conecte a impressora na tomada novamente e ligue-a no botão LIGA/DESLIGA;
+
+▪ Tente imprimir.</value>
+  </data>
+  <data name="txtHelpAlternative2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 260</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1011, 651</value>
+  </data>
+  <data name="lblHelpAlternative3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnHelpClose.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="txtHelpAlternative2.Text" xml:space="preserve">
+    <value>▪ Verifique se alguma das luzes do painel da sua impressora está piscando;
+
+▪ Se SIM:
+
+▪ Verifique a qual função a luz está atrelada, caso seja referente aos cartuchos pode ser que os mesmos estejam com pouca tinta¹, vazios² ou até mesmo queimados³,
+
+¹ nesse caso leve seu(s) cartucho(s) para realizar a recarga do(s) mesmo(s), caso não sejam recarregáveis, será preciso substituí-los;
+
+² realize a recarga ou a substituição do(s) cartucho(s) de tinta (para impressora jato de tinta) ou do toner (caso sua impressora seja laser);
+
+³ será necessário realizar a susbstituição dos cartuchos.</value>
+  </data>
+  <data name="txtHelpAlternative1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 57</value>
+  </data>
+  <data name="lblHelpAlternative3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="pnlHelpFooter.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblHelpAlternative3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 448</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmHelp</value>
+  </data>
+  <data name="&gt;&gt;pbLogoHelp.Name" xml:space="preserve">
+    <value>pbLogoHelp</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnHelpClose.Name" xml:space="preserve">
+    <value>btnHelpClose</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative2.Name" xml:space="preserve">
+    <value>lblHelpAlternative2</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pnlHelpFooter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 606</value>
+  </data>
+  <data name="&gt;&gt;pnlHelpFooter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtHelpAlternative2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pbLogoHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>956, 5</value>
+  </data>
+  <data name="lblHelpAlternative1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 21</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblHelpAlternative3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblHelpAlternative3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblHelpAlternative1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 33</value>
+  </data>
+  <data name="pnlHelpFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1013, 45</value>
+  </data>
+  <data name="pbLogoHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblHelpAlternative2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="lblHelpAlternative3.Text" xml:space="preserve">
+    <value>Alternativa 3</value>
+  </data>
+  <data name="lblHelpAlternative1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHelpAlternative2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 236</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
 </root>

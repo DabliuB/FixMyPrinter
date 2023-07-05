@@ -43,9 +43,6 @@ namespace FixMyPrinter
                 case 1:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
                     break;
-                default:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
-                    return;
             }
             this.Controls.Clear();
             InitializeComponent();

@@ -117,126 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>659, 291</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 248</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Name" xml:space="preserve">
-    <value>pnlDisclaimerFooter</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Considerações gerais</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmDisclaimer</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtDisclaimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>pnlDisclaimerFooter</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Name" xml:space="preserve">
-    <value>txtDisclaimer</value>
-  </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="txtDisclaimer.Text" xml:space="preserve">
-    <value>Todos os ícones e nomes de marcas utilizados e/ou mencionados neste programa de computador são de propriedade e/ou são marcas registradas de seus respectivos donos, e são utilizados unicamente com a finalidade de simplificar e melhorar a utilização do software de forma visual,  visto que seu público alvo são usuários leigos. 
-Este programa não realiza nenhuma modificação direta na sua impressora, ele apenas manipula o sistema operacional (Windows) buscando liberar a fila de impressão.
+    <value>All icons and brand names used and/or mentioned in this computer program are property and/or registered trademarks of their respective owners, and are used solely for the purpose of simplifying and improving the use of the software visually, since its target audience are lay users. 
+This program does not make any direct changes to your printer, it only manipulates the operating system (Windows) to free the print queue.
 
-O código fonte deste software está disponível para consulta e modificação no perfil do GitHub do desenvolvedor, sinta-se a vontade para visualizar o que o programa faz e até mesmo adicionar ou sugerir melhorias e novas funcionalidades.
-Contato: mailto://williamsilvajdf@gmail.com
+The source code of this software is available for consultation and modification in the developer's GitHub profile, feel free to view what the program does and even add or suggest improvements and new features.
+Contact: mailto://williamsilvajdf@gmail.com
 
-Licença: GPL-2.0
+License: GPL-2.0
 
-Softwares e assets de terceiros utilizados:
+Third-party software and assets used:
 
-Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-Soft
+This software uses icons from the free icon pack provided by Aha-Soft
 http://www.aha-soft.com/free-icons
 
-Este software utiliza a biblioteca AutoClosingMessageBox, fornecida por Dmitry Garavsky
+This software uses the AutoClosingMessageBox library provided by Dmitry Garavsky
 https://github.com/DmitryGaravsky/AutoClosingMessageBox</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtDisclaimer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>General considerations</value>
   </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 30</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>662, 45</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtDisclaimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="txtDisclaimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 229</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDisclaimerFooter.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

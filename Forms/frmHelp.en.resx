@@ -117,126 +117,83 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtHelpAlternative2.Text" xml:space="preserve">
+    <value>▪ Check to see if any of the lights on your printer's panel are flashing;
+
+▪ If YES:
+
+▪ Check which function the light is linked to, if it refers to the cartridges, it may be that they are low on ink¹, empty² or even burnt out³,
+
+¹ in this case take your cartridge(s) to recharge them, if they are not refillable, you will need to replace them;
+
+² recharge or replace the ink cartridge(s) (for ink-jet printers) or the toner (if your printer is a laser printer);
+
+³ You will need to replace the cartridges.</value>
+  </data>
+  <data name="lblHelpAlternative2.Text" xml:space="preserve">
+    <value>Alternative 2</value>
+  </data>
+  <data name="txtHelpAlternative1.Text" xml:space="preserve">
+    <value>▪  Turn your printer off completely by pressing the ON/OFF or ON/OFF button, then unplug the power cord from the wall outlet;
+
+▪  Press and hold the ON/OFF button for 10 seconds and release the button;
+
+▪  Wait for 20 seconds;
+
+▪ Plug the printer back in and turn on the ON/OFF button;
+
+▪  Try printing.</value>
+  </data>
+  <data name="lblHelpAlternative1.Text" xml:space="preserve">
+    <value>Alternative 1</value>
+  </data>
+  <data name="btnHelpClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="txtHelpAlternative3.Text" xml:space="preserve">
+    <value>▪ If none of the previous alternatives helped you:
+
+▪ Perhaps the problem with your printer is a hardware component, in which case you should take your printer to a service center.</value>
+  </data>
+  <data name="lblHelpAlternative3.Text" xml:space="preserve">
+    <value>Alternative 3</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>659, 291</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 248</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Name" xml:space="preserve">
-    <value>pnlDisclaimerFooter</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        BwDwAA8A+AAfAP4AfwD/AP8A
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Considerações gerais</value>
+    <value>Help</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmDisclaimer</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtDisclaimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>pnlDisclaimerFooter</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.Name" xml:space="preserve">
-    <value>txtDisclaimer</value>
-  </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
-  </data>
-  <data name="txtDisclaimer.Text" xml:space="preserve">
-    <value>Todos os ícones e nomes de marcas utilizados e/ou mencionados neste programa de computador são de propriedade e/ou são marcas registradas de seus respectivos donos, e são utilizados unicamente com a finalidade de simplificar e melhorar a utilização do software de forma visual,  visto que seu público alvo são usuários leigos. 
-Este programa não realiza nenhuma modificação direta na sua impressora, ele apenas manipula o sistema operacional (Windows) buscando liberar a fila de impressão.
-
-O código fonte deste software está disponível para consulta e modificação no perfil do GitHub do desenvolvedor, sinta-se a vontade para visualizar o que o programa faz e até mesmo adicionar ou sugerir melhorias e novas funcionalidades.
-Contato: mailto://williamsilvajdf@gmail.com
-
-Licença: GPL-2.0
-
-Softwares e assets de terceiros utilizados:
-
-Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-Soft
-http://www.aha-soft.com/free-icons
-
-Este software utiliza a biblioteca AutoClosingMessageBox, fornecida por Dmitry Garavsky
-https://github.com/DmitryGaravsky/AutoClosingMessageBox</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtDisclaimer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 30</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="pnlDisclaimerFooter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>662, 45</value>
-  </data>
-  <data name="&gt;&gt;txtDisclaimer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtDisclaimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="txtDisclaimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 229</value>
-  </data>
-  <data name="&gt;&gt;pnlDisclaimerFooter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlDisclaimerFooter.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
