@@ -117,16 +117,770 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblSpoolerFilesCleaned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblSpoolerFilesCleaned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 109</value>
+  </data>
+  <data name="lblSpoolerFilesCleaned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 17</value>
+  </data>
+  <data name="lblSpoolerFilesCleaned.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblSpoolerFilesCleaned.Text" xml:space="preserve">
+    <value>SPOOLER_CLEANING_STATUS_MESSAGE</value>
+  </data>
+  <data name="lblSpoolerFilesCleaned.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblSpoolerFilesCleaned.Name" xml:space="preserve">
+    <value>lblSpoolerFilesCleaned</value>
+  </data>
+  <data name="&gt;&gt;lblSpoolerFilesCleaned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSpoolerFilesCleaned.Parent" xml:space="preserve">
+    <value>gpbFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;lblSpoolerFilesCleaned.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnFixPrinter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnFixPrinter.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnFixPrinter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 38</value>
+  </data>
+  <data name="btnFixPrinter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 62</value>
+  </data>
+  <data name="btnFixPrinter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnFixPrinter.Text" xml:space="preserve">
+    <value>Tentar corrigir minha impressora</value>
+  </data>
+  <data name="&gt;&gt;btnFixPrinter.Name" xml:space="preserve">
+    <value>btnFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;btnFixPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFixPrinter.Parent" xml:space="preserve">
+    <value>gpbFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;btnFixPrinter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gpbFixPrinter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 33</value>
+  </data>
+  <data name="gpbFixPrinter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 151</value>
+  </data>
+  <data name="gpbFixPrinter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gpbFixPrinter.Text" xml:space="preserve">
+    <value>Resolver problemas com a fila de impressão</value>
+  </data>
+  <data name="&gt;&gt;gpbFixPrinter.Name" xml:space="preserve">
+    <value>gpbFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;gpbFixPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gpbFixPrinter.Parent" xml:space="preserve">
+    <value>tpFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;gpbFixPrinter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHelp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 210</value>
+  </data>
+  <data name="lblHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 34</value>
+  </data>
+  <data name="lblHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblHelp.Text" xml:space="preserve">
+    <value>     Se o procedimento acima não funcionou 
+tente seguir as dicas clicando no botão abaixo</value>
+  </data>
+  <data name="&gt;&gt;lblHelp.Name" xml:space="preserve">
+    <value>lblHelp</value>
+  </data>
+  <data name="&gt;&gt;lblHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHelp.Parent" xml:space="preserve">
+    <value>tpFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;lblHelp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnHelp.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 256</value>
+  </data>
+  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 35</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnHelp.Text" xml:space="preserve">
+    <value>Ainda não consigo imprimir</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>tpFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tpFixPrinter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="tpFixPrinter.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpFixPrinter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 315</value>
+  </data>
+  <data name="tpFixPrinter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpFixPrinter.Text" xml:space="preserve">
+    <value>Corrigir impressora</value>
+  </data>
+  <data name="&gt;&gt;tpFixPrinter.Name" xml:space="preserve">
+    <value>tpFixPrinter</value>
+  </data>
+  <data name="&gt;&gt;tpFixPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpFixPrinter.Parent" xml:space="preserve">
+    <value>tabMain</value>
+  </data>
+  <data name="&gt;&gt;tpFixPrinter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 14</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 34</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Links rápidos para baixar os drivers das
+ principais fabricantes de impressoras.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDownloadDriversCanon.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnDownloadDriversCanon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 248</value>
+  </data>
+  <data name="btnDownloadDriversCanon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 56</value>
+  </data>
+  <data name="btnDownloadDriversCanon.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnDownloadDriversCanon.Text" xml:space="preserve">
+    <value>Baixar drivers Canon</value>
+  </data>
+  <data name="btnDownloadDriversCanon.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversCanon.Name" xml:space="preserve">
+    <value>btnDownloadDriversCanon</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversCanon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversCanon.Parent" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversCanon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnDownloadDriversXerox.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnDownloadDriversXerox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 186</value>
+  </data>
+  <data name="btnDownloadDriversXerox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 56</value>
+  </data>
+  <data name="btnDownloadDriversXerox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnDownloadDriversXerox.Text" xml:space="preserve">
+    <value>Baixar drivers Xerox</value>
+  </data>
+  <data name="btnDownloadDriversXerox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversXerox.Name" xml:space="preserve">
+    <value>btnDownloadDriversXerox</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversXerox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversXerox.Parent" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversXerox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDownloadDriversEpson.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnDownloadDriversEpson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 124</value>
+  </data>
+  <data name="btnDownloadDriversEpson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 56</value>
+  </data>
+  <data name="btnDownloadDriversEpson.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnDownloadDriversEpson.Text" xml:space="preserve">
+    <value>Baixar drivers Epson</value>
+  </data>
+  <data name="btnDownloadDriversEpson.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversEpson.Name" xml:space="preserve">
+    <value>btnDownloadDriversEpson</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversEpson.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversEpson.Parent" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadDriversEpson.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnDownloadHPDrivers.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnDownloadHPDrivers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 62</value>
+  </data>
+  <data name="btnDownloadHPDrivers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 56</value>
+  </data>
+  <data name="btnDownloadHPDrivers.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnDownloadHPDrivers.Text" xml:space="preserve">
+    <value>Baixar drivers HP</value>
+  </data>
+  <data name="btnDownloadHPDrivers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadHPDrivers.Name" xml:space="preserve">
+    <value>btnDownloadHPDrivers</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadHPDrivers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadHPDrivers.Parent" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;btnDownloadHPDrivers.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tpDownloadDrivers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="tpDownloadDrivers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpDownloadDrivers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 315</value>
+  </data>
+  <data name="tpDownloadDrivers.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpDownloadDrivers.Text" xml:space="preserve">
+    <value>Baixar drivers</value>
+  </data>
+  <data name="&gt;&gt;tpDownloadDrivers.Name" xml:space="preserve">
+    <value>tpDownloadDrivers</value>
+  </data>
+  <data name="&gt;&gt;tpDownloadDrivers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpDownloadDrivers.Parent" xml:space="preserve">
+    <value>tabMain</value>
+  </data>
+  <data name="&gt;&gt;tpDownloadDrivers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnLicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 271</value>
+  </data>
+  <data name="btnLicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 32</value>
+  </data>
+  <data name="btnLicense.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnLicense.Text" xml:space="preserve">
+    <value>Licença</value>
+  </data>
+  <data name="&gt;&gt;btnLicense.Name" xml:space="preserve">
+    <value>btnLicense</value>
+  </data>
+  <data name="&gt;&gt;btnLicense.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLicense.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;btnLicense.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDisclaimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 271</value>
+  </data>
+  <data name="btnDisclaimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 32</value>
+  </data>
+  <data name="btnDisclaimer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnDisclaimer.Text" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="&gt;&gt;btnDisclaimer.Name" xml:space="preserve">
+    <value>btnDisclaimer</value>
+  </data>
+  <data name="&gt;&gt;btnDisclaimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDisclaimer.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;btnDisclaimer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 233</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblAboutProjectRepoLink.Text" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="&gt;&gt;lblAboutProjectRepoLink.Name" xml:space="preserve">
+    <value>lblAboutProjectRepoLink</value>
+  </data>
+  <data name="&gt;&gt;lblAboutProjectRepoLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAboutProjectRepoLink.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;lblAboutProjectRepoLink.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblGitHubRepo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGitHubRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 207</value>
+  </data>
+  <data name="lblGitHubRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 17</value>
+  </data>
+  <data name="lblGitHubRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblGitHubRepo.Text" xml:space="preserve">
+    <value>Repositório do projeto no GitHub</value>
+  </data>
+  <data name="&gt;&gt;lblGitHubRepo.Name" xml:space="preserve">
+    <value>lblGitHubRepo</value>
+  </data>
+  <data name="&gt;&gt;lblGitHubRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGitHubRepo.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;lblGitHubRepo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbAboutLinkedinProfile.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pbAboutLinkedinProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 70</value>
+  </data>
+  <data name="pbAboutLinkedinProfile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 112</value>
+  </data>
+  <data name="pbAboutLinkedinProfile.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pbAboutLinkedinProfile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pbAboutLinkedinProfile.Name" xml:space="preserve">
+    <value>pbAboutLinkedinProfile</value>
+  </data>
+  <data name="&gt;&gt;pbAboutLinkedinProfile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbAboutLinkedinProfile.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;pbAboutLinkedinProfile.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblDeveloperName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDeveloperName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="lblDeveloperName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 44</value>
+  </data>
+  <data name="lblDeveloperName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 21</value>
+  </data>
+  <data name="lblDeveloperName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDeveloperName.Text" xml:space="preserve">
+    <value>William Silva</value>
+  </data>
+  <data name="&gt;&gt;lblDeveloperName.Name" xml:space="preserve">
+    <value>lblDeveloperName</value>
+  </data>
+  <data name="&gt;&gt;lblDeveloperName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDeveloperName.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;lblDeveloperName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblDevelopedBy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDevelopedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="lblDevelopedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="lblDevelopedBy.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblDevelopedBy.Text" xml:space="preserve">
+    <value>Desenvolvido por</value>
+  </data>
+  <data name="&gt;&gt;lblDevelopedBy.Name" xml:space="preserve">
+    <value>lblDevelopedBy</value>
+  </data>
+  <data name="&gt;&gt;lblDevelopedBy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDevelopedBy.Parent" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;lblDevelopedBy.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tpAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="tpAbout.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 315</value>
+  </data>
+  <data name="tpAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpAbout.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="&gt;&gt;tpAbout.Name" xml:space="preserve">
+    <value>tpAbout</value>
+  </data>
+  <data name="&gt;&gt;tpAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpAbout.Parent" xml:space="preserve">
+    <value>tabMain</value>
+  </data>
+  <data name="&gt;&gt;tpAbout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 345</value>
+  </data>
+  <data name="tabMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabMain.Name" xml:space="preserve">
+    <value>tabMain</value>
+  </data>
+  <data name="&gt;&gt;tabMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnMainExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 363</value>
+  </data>
+  <data name="btnMainExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 30</value>
+  </data>
+  <data name="btnMainExit.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnMainExit.Text" xml:space="preserve">
+    <value>&amp;Sair</value>
+  </data>
+  <data name="&gt;&gt;btnMainExit.Name" xml:space="preserve">
+    <value>btnMainExit</value>
+  </data>
+  <data name="&gt;&gt;btnMainExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMainExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMainExit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="stsStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lblServiceState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="lblServiceState.Text" xml:space="preserve">
+    <value> O serviço está:</value>
+  </data>
+  <data name="lblStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold, Italic</value>
+  </data>
+  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Status.</value>
+  </data>
+  <data name="stsStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 403</value>
+  </data>
+  <data name="stsStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 22</value>
+  </data>
+  <data name="stsStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="stsStatus.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;stsStatus.Name" xml:space="preserve">
+    <value>stsStatus</value>
+  </data>
+  <data name="&gt;&gt;stsStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stsStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;stsStatus.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="tmrServiceMonitor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>117, 17</value>
+  </metadata>
+  <data name="lblAboutVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAboutVersion.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblAboutVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 405</value>
+  </data>
+  <data name="lblAboutVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="lblAboutVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblAboutVersion.Text" xml:space="preserve">
+    <value>Versão:</value>
+  </data>
+  <data name="&gt;&gt;lblAboutVersion.Name" xml:space="preserve">
+    <value>lblAboutVersion</value>
+  </data>
+  <data name="&gt;&gt;lblAboutVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAboutVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAboutVersion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVersion.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 405</value>
+  </data>
+  <data name="lblVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="lblVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblVersion.Text" xml:space="preserve">
+    <value>1.0.0.0</value>
+  </data>
+  <data name="&gt;&gt;lblVersion.Name" xml:space="preserve">
+    <value>lblVersion</value>
+  </data>
+  <data name="&gt;&gt;lblVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblVersion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cboLanguageSelection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="cboLanguageSelection.Items" xml:space="preserve">
+    <value>Português-BR</value>
+  </data>
+  <data name="cboLanguageSelection.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="cboLanguageSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 8</value>
+  </data>
+  <data name="cboLanguageSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 23</value>
+  </data>
+  <data name="cboLanguageSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cboLanguageSelection.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;cboLanguageSelection.Name" xml:space="preserve">
+    <value>cboLanguageSelection</value>
+  </data>
+  <data name="&gt;&gt;cboLanguageSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboLanguageSelection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboLanguageSelection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>49</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>440, 425</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAGBgAAAEACADIBgAAFgAAACgAAAAYAAAAMAAAAAEACAAAAAAAoAIAAAAAAAAAAAAAAAEAAAAA
@@ -160,5 +914,38 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAPwD8AD8A/AA/APwA
         PwD8AD8A/AA/APwAPwD8AD8A
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FixMyPrinter | Limpar o spooler de impressão</value>
+  </data>
+  <data name="&gt;&gt;lblServiceState.Name" xml:space="preserve">
+    <value>lblServiceState</value>
+  </data>
+  <data name="&gt;&gt;lblServiceState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmrServiceMonitor.Name" xml:space="preserve">
+    <value>tmrServiceMonitor</value>
+  </data>
+  <data name="&gt;&gt;tmrServiceMonitor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

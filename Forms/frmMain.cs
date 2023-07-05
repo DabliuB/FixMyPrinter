@@ -8,11 +8,14 @@ using System;
 using System.Windows.Forms;
 using System.Security.Principal;
 using System.ServiceProcess;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using FixMyPrinter.Forms;
 using System.Text;
-using FixMyPrinter.Drivers;
+using FixMyPrinter.DriversLinks;
+using FixMyPrinter.AboutLinks;
+using System.Threading;
 
 namespace FixMyPrinter
 {
@@ -21,15 +24,38 @@ namespace FixMyPrinter
         public frmMain()
         {
             InitializeComponent();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
             WindowsRoleVerification();
             StartTimerServiceMonitor();
             lblVersion.Text = Application.ProductVersion;
         }
 
+        private void cboLanguageSelection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cboLanguageSelection.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+                default:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
+                    return;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
         //Definindo o Spooler como o serviço alvo dos procedimentos.
-        ServiceController spooler = new ServiceController("Spooler");
+        readonly ServiceController spooler = new ServiceController("Spooler");
+
         //Flag utilizada na verificação do status do serviço.
-        bool IsServiceDisabled = false;
+        private bool IsServiceDisabled = false;
 
         private static bool IsAdministrator()
         {
@@ -43,18 +69,18 @@ namespace FixMyPrinter
         internal void WindowsRoleVerification()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("A manipulação de serviços do sistema exige que o programa seja executado por um usuário com privilégios administrativos." +
-                      "\nClique com o botão direito do mouse no FixMyPrinter e depois clique em 'Executar como Administrador'");
+            sb.Append("Este programa precisa ser executado como Administrador!\n" +
+                      "This program needs to be run as Administrator!");
 
             if (IsAdministrator() == false)
             {
-                MessageBox.Show(sb.ToString(), "A operação requer elevação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(sb.ToString(), "A operação requer elevação | This operation requires elevation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.Text = "FixMyPrinter";
 
             }
             else
             {
-                this.Text = "FixMyPrinter | Administrador";
+                this.Text = "FixMyPrinter | Admin";
             }
         }
 
@@ -79,11 +105,11 @@ namespace FixMyPrinter
 
             if (spooler.Status == ServiceControllerStatus.Running)
             {
-                lblStatus.Text = "em execução.";
+                lblStatus.Text = "em execução | running";
             }
             else if (spooler.Status == ServiceControllerStatus.Stopped)
             {
-                lblStatus.Text = "parado.";
+                lblStatus.Text = "parado | stopped";
             }
         }
 
@@ -99,9 +125,9 @@ namespace FixMyPrinter
             //Verificando se o serviço está parado
             if (spooler.StartType == ServiceStartMode.Disabled)
             {
-                MessageBox.Show(sb.ToString(), "Aviso");
+                MessageBox.Show(sb.ToString(), "Aviso | Notice");
                 //Abrindo o console de gerenciamento de serviços do Windows.
-                System.Diagnostics.Process.Start("services.msc");
+                Process.Start("services.msc");
                 IsServiceDisabled = true;
             }
             else if (spooler.Status == ServiceControllerStatus.Stopped)
@@ -136,30 +162,36 @@ namespace FixMyPrinter
 
                 lblSpoolerFilesCleaned.Visible = true;
                 lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.ForestGreen;
-                lblSpoolerFilesCleaned.Text = "Os arquivos do spooler foram limpos!";
+                lblSpoolerFilesCleaned.Text = "Os arquivos do spooler foram limpos!\n" +
+                                              "The spooler files have been cleaned!";
             }
             else
             {
                 lblSpoolerFilesCleaned.Visible = true;
                 lblSpoolerFilesCleaned.ForeColor = System.Drawing.Color.DarkGray;
-                lblSpoolerFilesCleaned.Text = "Nenhum arquivo no spooler para limpar.";
+                lblSpoolerFilesCleaned.Text = "Nenhum arquivo no spooler para limpar.\n" +
+                                              "No files in the spooler to clean.";
             }
         }
         //Rotina que recarrega o serviço para limpar a fila de impressão.
         private void ReloadSpooler()
         {
             //Parando o serviço do spooler de impressão
-            AutoClosingMessageBox.Show("Parando o serviço do Spooler de impressão...", "Status", 1300);
+            AutoClosingMessageBox.Show("Parando o serviço do Spooler de impressão...\n" +
+                                       "Stopping the print spooler service...", "Status", 1300);
             spooler.Stop();
 
             //Limpa os arquivos do spooler, se existirem.
             ClearFilesFromSpooler();
 
             //Iniciando o serviço do Spooler de impressão
-            AutoClosingMessageBox.Show("Reiniciando o serviço do Spooler de impressão...", "Status", 1300);
+            AutoClosingMessageBox.Show("Reiniciando o serviço do Spooler de impressão...\n" +
+                                       "Restarting the Print Spooler service...", "Status", 1300);
             spooler.Start();
             MessageBox.Show("Agora tudo deve funcionar corretamente!\n" +
-                            "Por favor, tente imprimir novamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            "Now everything should work properly!\n\n" +
+                            "Por favor, tente imprimir novamente.\n" +
+                            "Please try printing again.", "Aviso | Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
             IsServiceDisabled = false;
         }
         //Faz a verificação do status do serviço e se o mesmo não estiver desativado executa a rotina de recarregamento do spooler de impressão.
@@ -179,58 +211,46 @@ namespace FixMyPrinter
             }
             catch (Exception ex)
             {
-                const string errmsg = "Ocorreu um erro!";
+                const string errmsg = "Ocorreu um erro!" +
+                                      "An error has occurred!";
                 MessageBox.Show(ex.Message, errmsg, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        //Download de drivers.
+        #region Download de Drivers
         private void btnDownloadDriversEpson_Click(object sender, EventArgs e)
         {
-            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Epson, "Epson");
+            PrinterDrivers.OpenDriverLink(PrinterDrivers.PrinterBrand.Epson, "Epson");
         }
 
         private void btnDownloadHPDrivers_Click(object sender, EventArgs e)
         {
-            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.HP, "HP");
+            PrinterDrivers.OpenDriverLink(PrinterDrivers.PrinterBrand.HP, "HP");
         }
 
         private void btnDownloadDriversXerox_Click(object sender, EventArgs e)
         {
-            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Xerox, "Xerox");
+            PrinterDrivers.OpenDriverLink(PrinterDrivers.PrinterBrand.Xerox, "Xerox");
         }
 
         private void btnDownloadDriversCanon_Click(object sender, EventArgs e)
         {
-            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Canon, "Canon");
+            PrinterDrivers.OpenDriverLink(PrinterDrivers.PrinterBrand.Canon, "Canon");
         }
+        #endregion
 
-        //Abre no navegador padrão do usuário uma página que exibe o LinkedIn e o GitHub do desenvolvedor do software.
+        #region Redes sociais do desenvolvedor
         private void pbAboutLinkedinProfile_Click(object sender, EventArgs e)
         {
-            const string msg = "Deseja acessar o perfil do desenvolvedor no LinkedIn?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://www.linkedin.com/in/williamsilvajf/");
-            }
+            About.OpenExternalLink(About.DeveloperLink.LinkedIn, "Linkedin");
         }
-
         private void lblAboutProjectRepoLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            const string msg = "Deseja acessar o repositório do projeto no GitHub?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://github.com/pontiffex/FixMyPrinter");
-            }
+            About.OpenExternalLink(About.DeveloperLink.GitHub, "GitHub");
         }
+        #endregion
 
-        //Exibindo os formulários adicionais.
+        #region Abrindo os outros Forms
         private void btnHelp_Click(object sender, EventArgs e)
         {
             frmHelp formHelp = new frmHelp();
@@ -248,6 +268,7 @@ namespace FixMyPrinter
             frmLicense formLicense = new frmLicense();
             formLicense.ShowDialog();
         }
+        #endregion
 
         //Encerrando a aplicação.
         private void btnMainExit_Click(object sender, EventArgs e)

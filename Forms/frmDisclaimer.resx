@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtDisclaimer.Text" xml:space="preserve">
-    <value>Todos os ícones e nomes de marcas utilizados e/ou mencionados neste programa de computador são de propriedade e/ou são marcas registradas de seus respectivos donos, e são utilizados unicamente com a finalidade de simplificar e melhorar a utilização do software de forma visual, visto que seu público alvo são usuários leigos.
-
-Este programa não realiza nenhuma modificação direta na sua impressora, ele apenas manipula o sistema operacional (Windows) buscando liberar a fila de impressão.
-
-O código fonte deste software está disponível para consulta e modificação no perfil do GitHub
-do desenvolvedor, sinta-se a vontade para visualizar o que o programa faz e até mesmo adicionar
-ou sugerir melhorias e novas funcionalidades.
-
-Se for fazer um fork, por favor dê os créditos ao projeto original!
-
-Contato: mailto://wbsilva@veso.dev.br
-
-------------------
-Licença: GPL-2.0
-------------------
-
-Softwares e assets de terceiros utilizados:
-
-Este software utiliza ícones do pacote de ícones gratuitos fornecido pela Aha-Soft
-http://www.aha-soft.com/free-icons/
-
-Este software utiliza a biblioteca AutoClosingMessageBox, fornecida por Dmitry Garavsky
-https://github.com/DmitryGaravsky/AutoClosingMessageBox</value>
-  </data>
 </root>

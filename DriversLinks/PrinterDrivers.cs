@@ -1,5 +1,5 @@
 ﻿/* PROJETO : FixMyPrinter
- * ARQUIVO : Classe PrinterDriversLinks
+ * ARQUIVO : Classe PrinterDrivers
  * OBJETIVO: Concentrar todos os links para download de drivers num único arquivo para evitar a repetição de código que acontecia anteriormente.
  * AUTOR   : William Silva - unclWill
  * DATA    : 05/07/2023 (Criação) | Modificação: 05/07/2023
@@ -9,10 +9,11 @@
 using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using FixMyPrinter.Globals;
 
-namespace FixMyPrinter.Drivers
+namespace FixMyPrinter.DriversLinks
 {
-    internal class PrinterDriversLinks
+    internal class PrinterDrivers
     {
         internal enum PrinterBrand
         {
@@ -29,16 +30,16 @@ namespace FixMyPrinter.Drivers
             switch (brand)
             {
                 case PrinterBrand.Canon:
-                    driverDowloadLink = "https://www.usa.canon.com/internet/portal/us/home/support/";
+                    driverDowloadLink = Links._canonDrivers;
                     break;
                 case PrinterBrand.Epson:
-                    driverDowloadLink = "https://epson.com.br/Suporte/Impressoras/sh/s1";
+                    driverDowloadLink = Links._epsonDrivers;
                     break;
                 case PrinterBrand.HP:
-                    driverDowloadLink = "https://support.hp.com/br-pt/drivers/printers";
+                    driverDowloadLink = Links._hpDrivers;
                     break;
                 case PrinterBrand.Xerox:
-                    driverDowloadLink = "https://www.support.xerox.com/pt-br/product/global-printer-driver/downloads?language=pt_BR";
+                    driverDowloadLink = Links._xeroxDrivers;
                     break;
                 default:
                     Console.WriteLine("Nenhum link válido foi encontrado!");
@@ -47,7 +48,7 @@ namespace FixMyPrinter.Drivers
             return driverDowloadLink;
         }
 
-        internal static void OpenDriverLink(PrinterBrand brand, string printerManufacturerName)
+        internal static void OpenDriverLink(PrinterBrand brand, string printerManufacturerName = "fabricante")
         {
             string msg = "Deseja acessar o site de download de drivers da " + printerManufacturerName + "?";
             const string caption = "Abrir link externo";

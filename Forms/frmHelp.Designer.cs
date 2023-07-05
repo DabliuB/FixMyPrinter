@@ -44,13 +44,14 @@
             // 
             // txtHelpAlternative2
             // 
-            this.txtHelpAlternative2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHelpAlternative2.Location = new System.Drawing.Point(11, 260);
             this.txtHelpAlternative2.Name = "txtHelpAlternative2";
-            this.txtHelpAlternative2.Size = new System.Drawing.Size(1001, 185);
+            this.txtHelpAlternative2.ReadOnly = true;
+            this.txtHelpAlternative2.Size = new System.Drawing.Size(990, 185);
             this.txtHelpAlternative2.TabIndex = 4;
             this.txtHelpAlternative2.TabStop = false;
-            this.txtHelpAlternative2.Text = resources.GetString("txtHelpAlternative2.Text");
+            this.txtHelpAlternative2.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative2
             // 
@@ -64,13 +65,14 @@
             // 
             // txtHelpAlternative1
             // 
-            this.txtHelpAlternative1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHelpAlternative1.Location = new System.Drawing.Point(11, 57);
             this.txtHelpAlternative1.Name = "txtHelpAlternative1";
-            this.txtHelpAlternative1.Size = new System.Drawing.Size(1001, 176);
+            this.txtHelpAlternative1.ReadOnly = true;
+            this.txtHelpAlternative1.Size = new System.Drawing.Size(990, 176);
             this.txtHelpAlternative1.TabIndex = 2;
             this.txtHelpAlternative1.TabStop = false;
-            this.txtHelpAlternative1.Text = resources.GetString("txtHelpAlternative1.Text");
+            this.txtHelpAlternative1.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative1
             // 
@@ -104,13 +106,14 @@
             // 
             // txtHelpAlternative3
             // 
-            this.txtHelpAlternative3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHelpAlternative3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHelpAlternative3.Location = new System.Drawing.Point(11, 472);
             this.txtHelpAlternative3.Name = "txtHelpAlternative3";
-            this.txtHelpAlternative3.Size = new System.Drawing.Size(1001, 126);
+            this.txtHelpAlternative3.ReadOnly = true;
+            this.txtHelpAlternative3.Size = new System.Drawing.Size(990, 126);
             this.txtHelpAlternative3.TabIndex = 6;
             this.txtHelpAlternative3.TabStop = false;
-            this.txtHelpAlternative3.Text = resources.GetString("txtHelpAlternative3.Text");
+            this.txtHelpAlternative3.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // lblHelpAlternative3
             // 
@@ -154,6 +157,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajuda";
+            this.Load += new System.EventHandler(this.frmHelp_Load);
             this.pnlHelpFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoHelp)).EndInit();
             this.ResumeLayout(false);

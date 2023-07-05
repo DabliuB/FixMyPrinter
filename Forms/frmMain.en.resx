@@ -117,39 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tpFixPrinter.Text" xml:space="preserve">
+    <value>Fix my printer</value>
+  </data>
+  <data name="tpDownloadDrivers.Text" xml:space="preserve">
+    <value>Download drivers</value>
+  </data>
+  <data name="tpAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="gpbFixPrinter.Text" xml:space="preserve">
+    <value>Solve Problems with the Print Queue</value>
+  </data>
+  <data name="btnFixPrinter.Text" xml:space="preserve">
+    <value>Try to fix my printer</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 210</value>
+  </data>
+  <data name="lblHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 34</value>
+  </data>
+  <data name="lblHelp.Text" xml:space="preserve">
+    <value>         If the procedure above did not work 
+try following the tips by clicking the button below</value>
+  </data>
+  <data name="btnHelp.Text" xml:space="preserve">
+    <value>I still can't print</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 34</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Quick Links for Downloading Drivers for
+          major printer manufacturers.</value>
+  </data>
+  <data name="btnDownloadDriversCanon.Text" xml:space="preserve">
+    <value>Download Canon drivers</value>
+  </data>
+  <data name="btnDownloadDriversXerox.Text" xml:space="preserve">
+    <value>Download Xerox drivers</value>
+  </data>
+  <data name="btnDownloadDriversEpson.Text" xml:space="preserve">
+    <value>Download Epson drivers</value>
+  </data>
+  <data name="btnDownloadHPDrivers.Text" xml:space="preserve">
+    <value>Download HP drivers</value>
+  </data>
+  <data name="btnLicense.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="lblGitHubRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 207</value>
+  </data>
+  <data name="lblGitHubRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 17</value>
+  </data>
+  <data name="lblGitHubRepo.Text" xml:space="preserve">
+    <value>Project repository on GitHub</value>
+  </data>
+  <data name="lblDevelopedBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 17</value>
+  </data>
+  <data name="lblDevelopedBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="lblDevelopedBy.Text" xml:space="preserve">
+    <value>Developed by</value>
+  </data>
+  <data name="btnMainExit.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="lblServiceState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="lblServiceState.Text" xml:space="preserve">
+    <value>Service status:</value>
+  </data>
+  <data name="lblAboutVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="lblAboutVersion.Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        BwDwAA8A+AAfAP4AfwD/AP8A
+        AADQ0NIA7N/RAMmcXgDXvZEA7eHVAOzj1gD9+fEA7+jbAPXt5ADfyq0A+PPqAODLrgD17+QA0LSJAOfa
+        ygDy6d4A7+TYALxrEACDfYQAw8C/ANioWQCclpYA3tC4AOHMsQCfmZkA7+7tAOi7WgDw6d4Ay7iSAN6x
+        ZADWxa8AzczJAO/JcQDFiksA0raLAMrIxgDi6O8AmZKSALmdawCxra4A0c/OALp7PgDuxnAA4alCAOPT
+        tgDXw5sAxKt/APj8/wDj2MYA4KxUAObo6QCgmpkAaWNqAO7k2gDS0tMA+eGWAPTr4gDu4dUA89SFAP/7
+        9AD38egA+N+TANyoUgDXpVwA09LRAKSfoQD9/f0A6ejoAOPo7QDmuFkAyZJLANnAlAD37+gA6MBwAPHm
+        3ADayq4A6d3OALqdbQDl2skA0L2YAMaodADh1r4A1cSkAJWPjwDu8vUAxsTDAPz//wCwr7QA4s2zANDR
+        0wDNl1MAyp5gAO3JdwDHxcMA+vXtAOGmPADi1sEAsYVJAPT4/ADu5dgAbpvjAOvm3QDl4+IAz8zKAKuo
+        qACdmZkAysLEALi1tQDS0NAAisPpAPj4+AAAS/sA1NHQAM3IyQD4+fkAvLm6ALKurwDY1dgAnJmYAMrC
+        wgDe3NsA49/fAOHi5ADJx8YA3dvbALezswDU0M4AzszKAOni2QDj4uIAzsvMAMrDxQD08/IAusrXANzY
+        2wD09PMAv7u8ANXT0gCyrbAA0tDPANDLxQDn5eMAzcnFAN/f3wDe2NYAqqenANzX0ADpv2gA4ahCAOLn
+        7gDux3EA5rdZALtqDwDZ19cA////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAnJycnJycUWMFBQUFBQUFBWNRnJycnJycnJycnJycLDwMDAwMDAwMDDwsnJycnJycUxgVFTM0
+        LTUEBAQEBAQEBDUtNDMVFRglU1UTE10SUFgLCwsLCwsLC1hQEl0TE1Uldn8jIx8STSINDQ0NDQ0NDSJN
+        Eh+OjGdpQYkoKItANlkAAAAAAAAAAFk2QH6FZJJBkXyZmZmZmZmZmZmZmZmZmZmZmZBtb4BoioGPekQk
+        lZWVlZWVlZWVlZWVJESNZWZ0fUMyHhERmJiYmJiYmJiYmJiYEREeMkNrcxlUKV8rlJSUlJSUlJSUlJSU
+        K18pVBmId4diIRpFl5eXl5eXl5eXl5eXRRohYoR7cXIvWiAqlpaWlpaWlpaWlpaWKiBaL26CbEJWPzpc
+        k5OTk5OTk5OTk5OTXDo/VkJwdZqaHT0+YVsCAgICAgICAlthPj0dmpqGeJqaSTcxJkcDAwMDAwMDA0cm
+        MTdJmpp5gydXFBRGLhcJCQkJCQkJCRcuRhQUVydqnJycnJycHEwODg4ODg4ODkwcnJycnJycnJycnJyc
+        TzkBAQEBAQEBATlPnJycnJycnJycnJycUkoQEBAQEBAQEEpSnJycnJycnJycnJycSzgPDw8PDw8PDzhL
+        nJycnJycnJycnJycFkgICAgICAgICEgWnJycnJycnJycnJycYF4KCgoKCgoKCl5gnJycnJycnJycnJyc
+        TjsGBgYGBgYGBjtOnJycnJycnJycnJycMBsHBwcHBwcHBxswnJycnJyc/AA/APwAPwAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAPwD8AD8A/AA/APwA
+        PwD8AD8A/AA/APwAPwD8AD8A
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FixMyPrinter | Clear Windows Print Spooler</value>
   </data>
 </root>

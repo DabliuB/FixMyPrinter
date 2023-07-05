@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisclaimer));
             this.btnClose = new System.Windows.Forms.Button();
             this.txtDisclaimer = new System.Windows.Forms.RichTextBox();
             this.pnlDisclaimerFooter = new System.Windows.Forms.Panel();
@@ -58,7 +57,7 @@
             this.txtDisclaimer.Size = new System.Drawing.Size(639, 229);
             this.txtDisclaimer.TabIndex = 1;
             this.txtDisclaimer.TabStop = false;
-            this.txtDisclaimer.Text = resources.GetString("txtDisclaimer.Text");
+            this.txtDisclaimer.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // pnlDisclaimerFooter
             // 
@@ -86,6 +85,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Considerações gerais";
+            this.Load += new System.EventHandler(this.frmDisclaimer_Load);
             this.pnlDisclaimerFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLicense));
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlDisclaimerFooter = new System.Windows.Forms.Panel();
             this.txtLicense = new System.Windows.Forms.RichTextBox();
@@ -69,13 +68,13 @@
             this.txtLicense.Size = new System.Drawing.Size(639, 229);
             this.txtLicense.TabIndex = 3;
             this.txtLicense.TabStop = false;
-            this.txtLicense.Text = resources.GetString("txtLicense.Text");
+            this.txtLicense.Text = "TEXT_LOADED_BASED_ON\nGlobals.TextDescriptions";
             // 
             // frmLicense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 287);
+            this.ClientSize = new System.Drawing.Size(651, 283);
             this.ControlBox = false;
             this.Controls.Add(this.pnlDisclaimerFooter);
             this.Controls.Add(this.txtLicense);
@@ -87,6 +86,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acordo de Licença";
+            this.Load += new System.EventHandler(this.frmLicense_Load);
             this.pnlDisclaimerFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -6,6 +6,7 @@
 
 using System;
 using System.Windows.Forms;
+using FixMyPrinter.Globals;
 
 namespace FixMyPrinter.Forms
 {
@@ -19,6 +20,11 @@ namespace FixMyPrinter.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmLicense_Load(object sender, EventArgs e)
+        {
+            txtLicense.Text = TextDescriptions.ShowLicenseDescription();
         }
     }
 }

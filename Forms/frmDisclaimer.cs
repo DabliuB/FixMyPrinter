@@ -6,6 +6,7 @@
 
 using System;
 using System.Windows.Forms;
+using FixMyPrinter.Globals;
 
 namespace FixMyPrinter.Forms
 {
@@ -14,6 +15,11 @@ namespace FixMyPrinter.Forms
         public frmDisclaimer()
         {
             InitializeComponent();
+        }
+
+        private void frmDisclaimer_Load(object sender, EventArgs e)
+        {
+            txtDisclaimer.Text = TextDescriptions.ShowDisclaimerDescription();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

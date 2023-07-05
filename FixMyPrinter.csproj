@@ -104,7 +104,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Drivers\PrinterDriversLinks.cs" />
+    <Compile Include="AboutLinks\About.cs" />
+    <Compile Include="DriversLinks\PrinterDrivers.cs" />
     <Compile Include="Forms\frmDisclaimer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +130,8 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals\Links.cs" />
+    <Compile Include="Globals\TextDescriptions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmDisclaimer.resx">
@@ -139,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLicense.resx">
       <DependentUpon>frmLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.en.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
