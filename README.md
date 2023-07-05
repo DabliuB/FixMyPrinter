@@ -4,7 +4,7 @@ Soluções simples para problemas na hora de imprimir no Windows
 
 Site do projeto no GitHub Pages https://unclwill.github.io/FixMyPrinter/
 
-O objetivo deste software é tentar resolver simples problemas enfrentados por usuários comuns ao tentar imprimir.
+O objetivo deste pequeno software é tentar resolver simples problemas enfrentados por usuários comuns ao tentar imprimir.
 Muitas vezes ocorrem erros durante o processo e a fila de impressão do Windows acaba ficando cheia e o usuário,
 por sua vez não consegue imprimir, já que os documentos "emperrados" na fila não deixam a impressão acontecer normalmente.
 
@@ -18,7 +18,7 @@ https://github.com/unclwill/FixMyPrinter/releases
 ![Camada 3](https://user-images.githubusercontent.com/14021232/152700917-be4aacea-2e96-45e0-903d-982a8fbcf1f9.png)
 
 Motivação
->_A razão primordial para a existência deste software surgiu de uma necessidade dos usuários da empresa de manutenção onde trabalho.
+>_A razão primordial para a existência deste software surgiu de uma necessidade dos usuários da empresa de manutenção onde trabalhei (2019 - 2022).
 Apesar de acessar o console de gerenciamento de serviços do Windows parecer algo trivial, a maioria dos usuários comuns não sabem fazê-lo,
 e com este software simples e portátil podemos deixar um atalho na Área de Trabalho dos nossos clientes para que eles tentem resolver problemas básicos
 de impressão que se traduzem em economia de tempo de serviço em acessos remotos._
