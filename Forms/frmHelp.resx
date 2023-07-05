@@ -123,16 +123,13 @@
   <data name="&gt;&gt;pnlHelpFooter.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblHelpAlternative2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtHelpAlternative1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtHelpAlternative1.Size" type="System.Drawing.Size, System.Drawing">
     <value>990, 176</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblHelpAlternative1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;txtHelpAlternative2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -155,8 +152,8 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
 ▪ https://anydesk.com/pt/downloads/thank-you?dv=win_exe (AnyDesk para Windows)
 ▪ Talvez o problema da sua impressora seja em algum componente de hardware, nesse caso leve-a para a assistência técnica especializada.</value>
   </data>
-  <data name="pbLogoHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 46</value>
+  <data name="&gt;&gt;pbLogoHelp.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnHelpClose.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -217,14 +214,17 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="pnlHelpFooter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;lblHelpAlternative2.Name" xml:space="preserve">
+    <value>lblHelpAlternative2</value>
+  </data>
   <data name="btnHelpClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>988, 30</value>
   </data>
+  <data name="txtHelpAlternative2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 185</value>
+  </data>
   <data name="&gt;&gt;lblHelpAlternative1.Name" xml:space="preserve">
     <value>lblHelpAlternative1</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Ajuda</value>
   </data>
   <data name="&gt;&gt;pbLogoHelp.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -235,14 +235,8 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;pbLogoHelp.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="lblHelpAlternative2.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 21</value>
-  </data>
-  <data name="&gt;&gt;lblHelpAlternative3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnHelpClose.Parent" xml:space="preserve">
     <value>pnlHelpFooter</value>
@@ -252,9 +246,6 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   </data>
   <data name="&gt;&gt;txtHelpAlternative3.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pbLogoHelp.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;lblHelpAlternative3.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -274,17 +265,14 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="&gt;&gt;txtHelpAlternative3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pnlHelpFooter.Name" xml:space="preserve">
-    <value>pnlHelpFooter</value>
-  </data>
   <data name="txtHelpAlternative3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="lblHelpAlternative2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtHelpAlternative2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>990, 185</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ajuda</value>
   </data>
   <data name="btnHelpClose.Text" xml:space="preserve">
     <value>Fechar</value>
@@ -303,6 +291,9 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   </data>
   <data name="lblHelpAlternative1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtHelpAlternative1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblHelpAlternative2.Text" xml:space="preserve">
     <value>Alternativa 2</value>
@@ -336,6 +327,9 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="btnHelpClose.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="pbLogoHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 46</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 17</value>
   </data>
@@ -361,17 +355,23 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="pnlHelpFooter.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="pnlHelpFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1013, 45</value>
+  </data>
   <data name="&gt;&gt;txtHelpAlternative1.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="pbLogoHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblHelpAlternative3.Text" xml:space="preserve">
+    <value>Alternativa 3</value>
   </data>
   <data name="lblHelpAlternative3.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 448</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmHelp</value>
-  </data>
-  <data name="&gt;&gt;pbLogoHelp.Name" xml:space="preserve">
-    <value>pbLogoHelp</value>
   </data>
   <data name="&gt;&gt;txtHelpAlternative2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -382,17 +382,17 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="&gt;&gt;btnHelpClose.Name" xml:space="preserve">
     <value>btnHelpClose</value>
   </data>
-  <data name="&gt;&gt;lblHelpAlternative2.Name" xml:space="preserve">
-    <value>lblHelpAlternative2</value>
+  <data name="lblHelpAlternative2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;txtHelpAlternative1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pbLogoHelp.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pnlHelpFooter.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 606</value>
   </data>
-  <data name="&gt;&gt;pnlHelpFooter.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lblHelpAlternative3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtHelpAlternative3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -418,28 +418,25 @@ Se ainda não possui o AnyDesk instalado no seu computador baixe diretamente des
   <data name="lblHelpAlternative1.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 33</value>
   </data>
-  <data name="pnlHelpFooter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1013, 45</value>
+  <data name="&gt;&gt;txtHelpAlternative1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="pbLogoHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;pnlHelpFooter.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lblHelpAlternative2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
-  <data name="lblHelpAlternative3.Text" xml:space="preserve">
-    <value>Alternativa 3</value>
+  <data name="&gt;&gt;pbLogoHelp.Name" xml:space="preserve">
+    <value>pbLogoHelp</value>
   </data>
-  <data name="lblHelpAlternative1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pnlHelpFooter.Name" xml:space="preserve">
+    <value>pnlHelpFooter</value>
   </data>
   <data name="lblHelpAlternative2.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 236</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
   </metadata>
 </root>
