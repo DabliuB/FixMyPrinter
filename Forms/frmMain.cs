@@ -12,6 +12,7 @@ using System.IO;
 using System.Linq;
 using FixMyPrinter.Forms;
 using System.Text;
+using FixMyPrinter.Drivers;
 
 namespace FixMyPrinter
 {
@@ -184,54 +185,25 @@ namespace FixMyPrinter
         }
 
         //Download de drivers.
-        private void btnDownloadHPDrivers_Click(object sender, EventArgs e)
-        {
-            const string msg = "Deseja acessar o site de download de drivers HP?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://support.hp.com/br-pt/drivers/printers");
-            }
-        }
-
         private void btnDownloadDriversEpson_Click(object sender, EventArgs e)
         {
-            const string msg = "Deseja acessar o site de download de drivers Epson?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Epson, "Epson");
+        }
 
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://support.hp.com/br-pt/drivers/printers");
-            }
+        private void btnDownloadHPDrivers_Click(object sender, EventArgs e)
+        {
+            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.HP, "HP");
         }
 
         private void btnDownloadDriversXerox_Click(object sender, EventArgs e)
         {
-            const string msg = "Deseja acessar o site de download de drivers Xerox?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://epson.com.br/Suporte/Impressoras/sh/s1");
-            }
+            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Xerox, "Xerox");
         }
 
         private void btnDownloadDriversCanon_Click(object sender, EventArgs e)
         {
-            const string msg = "Deseja acessar o site de download de drivers Canon?";
-            const string caption = "Abrir link externo";
-            dynamic dialogResult = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start("https://www.usa.canon.com/internet/portal/us/home/support/");
-            }
+            PrinterDriversLinks.OpenDriverLink(PrinterDriversLinks.PrinterBrand.Canon, "Canon");
         }
-
 
         //Abre no navegador padrão do usuário uma página que exibe o LinkedIn e o GitHub do desenvolvedor do software.
         private void pbAboutLinkedinProfile_Click(object sender, EventArgs e)

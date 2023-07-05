@@ -104,6 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drivers\PrinterDriversLinks.cs" />
     <Compile Include="Forms\frmDisclaimer.cs">
       <SubType>Form</SubType>
     </Compile>
